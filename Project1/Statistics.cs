@@ -23,10 +23,10 @@ namespace Project1
             //say if the user clicks on a file that is a json
             if(filetype.Contains(".json"))
             {
-                DataModeler.ParseJson parsejson = modeler.ParseJSON;
+                //DataModeler.ParseJson parsejson = modeler.ParseJSON;
 
                 //call the parse method for json
-                modeler.ParseFile(fullfilename, parsejson);
+               // modeler.ParseFile(fullfilename, parsejson);
 
             }
 

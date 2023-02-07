@@ -10,6 +10,8 @@ namespace Project1
         List<Dictionary<string, string>> ValueList;
        public List<cityinfo> cit = new();
 
+        Dictionary<string, string> values;
+
         public delegate void ParseJson(string file);
 
         public int count()
@@ -18,15 +20,18 @@ namespace Project1
         }
 
 
-        public void  ParseJSON(string fileName)
+        public void ParseJSON(string fileName)
         {
             //put all data read from file to string
             string readData = File.ReadAllText(fileName);
-            Console.WriteLine(readData);
+            //Console.WriteLine(readData);
 
+            //string json = @"{""key1"":""value1"",""key2"":""value2""}";
 
-            //for json
-            ValueList = JsonSerializer.Deserialize<List<Dictionary<string, string>>>(readData);
+           
+
+                //for json
+                ValueList = JsonSerializer.Deserialize<List<Dictionary<string, string>>>(readData);
 
             int cityid = 0;
             string cityname = "";
@@ -38,70 +43,77 @@ namespace Project1
 
             cityinfo info;
 
-            for (int i = 0; i < ValueList.Count; ++i)
-            {
-                //Console.WriteLine($"[{i}]");
+            //for (int i = 0; i < ValueList.Count; ++i)
+            //{
+            //    //Console.WriteLine($"[{i}]");
 
-                if (ValueList[i] == null)
-                {
+            //    if (ValueList[i] == null)
+            //    {
 
-                    Console.WriteLine("[null]");
-                }
-                else
-                    foreach (var pair in ValueList[i])
-                    {
-                        //Console.WriteLine($"\"{pair.Key}\" : \"{pair.Value}\"");
+            //        Console.WriteLine("[null]");
+            //    }
+            //    else
+            //        foreach (var pair in ValueList[i])
+            //        {
+            //            //Console.WriteLine($"\"{pair.Key}\" : \"{pair.Value}\"");
 
-                        switch (pair.Key)
-                        {
-                            case "id":
-                                cityid = Int32.Parse(pair.Value);
-                                break;
-                            case "city": 
-                                cityname = pair.Key;
-                                break;
-                            case "city_ascii":
-                                cityAscii = pair.Value;
-                                break;
-                            case "population":
-                                population= Int32.Parse(pair.Value);
-                                break;
-                            case "region":
-                                province = pair.Key;
-                                break;
-                            case "lat":
-                                latitude = Double.Parse(pair.Value);
-                                break;
-                            case "lng":
-                                longitude = Double.Parse(pair.Value);
-                                break;
+            //            switch (pair.Key)
+            //            {
+            //                case "id":
+            //                    cityid = Int32.Parse(pair.Value);
+            //                    break;
+            //                case "city": 
+            //                    cityname = pair.Key;
+            //                    break;
+            //                case "city_ascii":
+            //                    cityAscii = pair.Value;
+            //                    break;
+            //                case "population":
+            //                    population= Int32.Parse(pair.Value);
+            //                    break;
+            //                case "region":
+            //                    province = pair.Key;
+            //                    break;
+            //                case "lat":
+            //                    latitude = Double.Parse(pair.Value);
+            //                    break;
+            //                case "lng":
+            //                    longitude = Double.Parse(pair.Value);
+            //                    break;
 
 
-                        }
+            //            }
  
-                        //Console.WriteLine(cityid + " " + cityname);
-                        info = new cityinfo(cityid, cityname, cityAscii, population, province, latitude, longitude);
+            //            //Console.WriteLine(cityid + " " + cityname);
+            //            info = new cityinfo(cityid, cityname, cityAscii, population, province, latitude, longitude);
 
-                        //  s.setCity(pair.Value);
+            //            //  s.setCity(pair.Value);
 
-                        cit.Add(info);
-                    }
+            //            cit.Add(info);
+            //        }
 
 
                
-            }
+            //}
 
 
              
             
         }
 
-        public void ParseFile(string fileName, ParseJson handler)
-        {
-            handler.Invoke(fileName);
+        //public Dictionary<T, T> ParseFile<T>(string fileName, string filetype)
+        //{
+           
+        //    if(filetype.Contains(".json"))
+        //    {
+        //        ParseJson handler = ParseJSON;
 
+        //        handler.Invoke(fileName);
+        //    }
 
-        }
+        //    return ValueList;
+
+        //}
 
     }
 }
