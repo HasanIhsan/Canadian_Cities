@@ -361,6 +361,16 @@ namespace Project1
         }
 
 
+        //show city on map 
+        public void ShowCityOnMap()
+        {
+
+        }
+
+        public void CalculateDistanceBetweenCities()
+        {
+
+        }
 
         //province methods
 
@@ -408,6 +418,11 @@ namespace Project1
              
         }
 
+        //rank by cities
+        public void RankProvinceByCities()
+        {
+
+        }
 
         //get capital
         public void GetCapital(string province)
