@@ -16,42 +16,18 @@ namespace Project1
 
             //DataModeler m = new();
 
-            //m.ParseJSON("Canadacities-JSON.json");
+           // m.ParseJSON("Canadacities-JSON.json");
 
             //Console.WriteLine(m.count());   
 
-            string readData = File.ReadAllText("Canadacities-JSON.json");
+           
 
+            string filename = "Canadacities-JSON";
+            string filetype = "json";
 
-            List<Dictionary<string, string>> ValueList = JsonSerializer.Deserialize<List<Dictionary<string, string>>>(readData);
+            Statistics stats = new Statistics(filename, filetype);
 
-            Dictionary<string, string> list = JsonSerializer.Deserialize<Dictionary<string, string>>(readData);
-
-            foreach (var pair in list)
-            {
-                Console.WriteLine($"\"{pair.Key}\" : \"{pair.Value}\"");
-
-            }
-
-            //for (int i = 0; i < ValueList.Count; ++i)
-            //{
-            //    Console.WriteLine($"[{i}]");
-
-            //    if (ValueList[i] == null)
-            //    {
-
-            //        Console.WriteLine("[null]");
-            //    }
-            //    else
-            //        foreach (var pair in ValueList[i])
-            //        {
-            //            Console.WriteLine($"\"{pair.Key}\" : \"{pair.Value}\"");
-
-            //        }
-
-
-
-            //}
+            stats.DisplayCityInformation("Whitehorse");
         }
     }
 }
