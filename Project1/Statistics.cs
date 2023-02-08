@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
+using System.Xml.Linq; 
 
 namespace Project1
 {
@@ -21,8 +21,70 @@ namespace Project1
             string fileType = "." + filetype;
             string fullfilename = filename + fileType;
 
-           
 
+            //populate the list of cityinfo 
+            int cityid = 0;
+            string cityname = "";
+            string cityAscii = "";
+            int population = 0;
+            string province = "";
+            double latitude = 0;
+            double longitude = 0;
+
+            if (filetype.Contains("xml"))
+            {
+
+                citycatalog.AddRange(modeler.ParseFile(fullfilename, filetype));
+                for (int i = 0; i < citycatalog.Count; ++i)
+                {
+
+                    foreach (var pair in citycatalog[i])
+                    {
+                        //  Console.WriteLine($"\"{pair.Key}\" : \"{pair.Value}\"");
+
+                        //takes data from list of dictionary data and puts it into a list of cityinfo
+                        if (pair.Key == "id_" + i)
+                        {
+                            cityid = Int32.Parse(pair.Value);
+
+                        }
+                        else if (pair.Key == "city_" + i)
+                        {
+                            cityname = pair.Value;
+
+                        }
+                        else if (pair.Key == "city_ascii_" + i)
+                        {
+                            cityAscii = pair.Value;
+                        }
+                        else if (pair.Key == "population_" + i)
+                        {
+                            population = Int32.Parse(pair.Value);
+                        }
+                        else if (pair.Key == "region_" + i)
+                        {
+
+                            province = pair.Value;
+
+                        }
+                        else if (pair.Key == "lat_" + i)
+                        {
+                            latitude = Double.Parse(pair.Value);
+                        }
+                        else if (pair.Key == "lng_" + i)
+                        {
+                            longitude = Double.Parse(pair.Value);
+                        }
+
+
+                    }
+
+                    cityinfo.Add(new cityinfo(cityid, cityname, cityAscii, population, province, latitude, longitude));
+
+
+
+                }
+            }
 
             //say if the user clicks on a file that is a json
             if(filetype.Contains("json"))
@@ -33,16 +95,7 @@ namespace Project1
                 citycatalog.AddRange(modeler.ParseFile(fullfilename, filetype));
                 //modeler.ParseFile(fullfilename, filetype);
 
-                //populate the list of cityinfo 
-                int cityid = 0;
-                string cityname = "";
-                string cityAscii = "";
-                int population = 0;
-                string province = "";
-                double latitude = 0;
-                double longitude = 0;
-
-                
+              
 
                 for (int i = 0; i < citycatalog.Count; ++i)
                 {
@@ -214,5 +267,8 @@ namespace Project1
                 Console.WriteLine($"Compared to  {city1} with a  population of {city1Population}");
             }
         }
+
+
+
     }
 }

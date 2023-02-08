@@ -16,23 +16,26 @@ namespace Project1
 
             //DataModeler m = new();
 
-           // m.ParseJSON("Canadacities-JSON.json");
+            // m.ParseJSON("Canadacities-JSON.json");
 
             //Console.WriteLine(m.count());   
 
-           
 
-            string filename = "Canadacities-JSON";
-            string filetype = "json";
+
+            string filename = "Canadacities-XML";
+            string filetype = "xml";
+
+            //string filename = "Canadacities-JSON";
+            //string filetype = "json";
 
             Statistics stats = new Statistics(filename, filetype);
 
             stats.DisplayCityInformation("Whitehorse");
-            Console.WriteLine();  
-            stats.DisplayLargestPopulationCity();
-            Console.WriteLine();
-            stats.DisplaySmallestPopulationCity();
-            stats.CompareCitiesPopulation("Port Hardy", "Happy Valley - Goose Bay");
+            //Console.WriteLine();  
+            //stats.DisplayLargestPopulationCity();
+            //Console.WriteLine();
+            //stats.DisplaySmallestPopulationCity();
+            //stats.CompareCitiesPopulation("Port Hardy", "Happy Valley - Goose Bay");
         }
     }
 }
