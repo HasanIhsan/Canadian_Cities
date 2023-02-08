@@ -28,6 +28,11 @@ namespace Project1
             Statistics stats = new Statistics(filename, filetype);
 
             stats.DisplayCityInformation("Whitehorse");
+            Console.WriteLine();  
+            stats.DisplayLargestPopulationCity();
+            Console.WriteLine();
+            stats.DisplaySmallestPopulationCity();
+            stats.CompareCitiesPopulation("Port Hardy", "Happy Valley - Goose Bay");
         }
     }
 }
