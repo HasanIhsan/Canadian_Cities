@@ -166,7 +166,7 @@ namespace Project1
         public void DisplayCityInformation(string cname)
         {
             //might chnge this sort of works but doest
-            int citycount = 1;
+          
             int userinput;
 
             string province1, province2;
@@ -181,8 +181,7 @@ namespace Project1
                 {
                     //province1 = cityinfo[i].Province;
                     differentProvinceSameCityName.Add(cityinfo[i].Province);
-
-                    citycount++;
+ 
 
                     if (differentProvinceSameCityName.Count > 1)
                     {
