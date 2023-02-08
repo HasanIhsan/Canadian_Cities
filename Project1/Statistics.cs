@@ -169,8 +169,8 @@ namespace Project1
           
             int userinput;
 
-            string province1, province2;
-
+          
+            // for dulicate city names
             List<string> differentProvinceSameCityName = new();
 
             //display data:
@@ -180,9 +180,12 @@ namespace Project1
                 if (cityinfo[i].city == cname)
                 {
                     //province1 = cityinfo[i].Province;
+                    //adds province to list if there are duplicates
                     differentProvinceSameCityName.Add(cityinfo[i].Province);
  
 
+
+                    //entirly if there is dulicates (only really works if there are 2)
                     if (differentProvinceSameCityName.Count > 1)
                     {
                         //province2 = cityinfo[i].Province;
@@ -196,36 +199,19 @@ namespace Project1
                             Console.WriteLine($"{j+1}. {cityinfo[i].city} of {differentProvinceSameCityName[j]}");
                         }
 
+                        //will fail if there user enters values that are not in the array say there are
+                        //2 duplicates but user enter 3 (will throw(crash) an exception stoping the program)
                         userinput = Int32.Parse( Console.ReadLine());
+                         
 
-                        if(userinput == 1) {
-
-                            
-
-                            //this is dumb)
-                            for(int k = 0; k < cityinfo.Count; k++)
-                            {
-                                if (cityinfo[k].city == cname && cityinfo[k].Province == differentProvinceSameCityName[0])
-                                {
-
-                                    Console.WriteLine($"CityID: {cityinfo[k].CityID}");
-                                    Console.WriteLine($"CityName: {cityinfo[k].city} ");
-                                    Console.WriteLine($"City_Ascii: {cityinfo[k].CityAscii} ");
-                                    Console.WriteLine($"Population: {cityinfo[k].Population} ");
-                                    Console.WriteLine($"Province: {cityinfo[k].Province} ");
-                                    Console.WriteLine($"Latitude: {cityinfo[k].Latitude}");
-                                    Console.WriteLine($"Longitude: {cityinfo[k].Longitude}");
-                                }
-                            }
-                           
-                           
-                           
-                        }else
-                        {
-                            for (int k = 0; k < cityinfo.Count; k++)
-                            {
-                                if (cityinfo[k].city == cname && cityinfo[k].Province == differentProvinceSameCityName[1])
-                                {
+                       //this is something
+                       for(int k = 0; k < cityinfo.Count; k++)
+                       { 
+                            //cityinfo.city is the name the user asks for (cname)
+                            //and the province (which at this point there are more then 1)
+                            //is the same as the differentProvinceSameCityName [username -1) -1 cause user would enter 1 and the index would b 0
+                            if (cityinfo[k].city == cname && cityinfo[k].Province == differentProvinceSameCityName[userinput - 1])
+                            { 
 
                                     Console.WriteLine($"CityID: {cityinfo[k].CityID}");
                                     Console.WriteLine($"CityName: {cityinfo[k].city} ");
@@ -234,11 +220,11 @@ namespace Project1
                                     Console.WriteLine($"Province: {cityinfo[k].Province} ");
                                     Console.WriteLine($"Latitude: {cityinfo[k].Latitude}");
                                     Console.WriteLine($"Longitude: {cityinfo[k].Longitude}");
-                                }
                             }
-
-                        }
-
+                       }
+                           
+                           
+                     
                     } 
                      
 

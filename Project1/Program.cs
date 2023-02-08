@@ -12,43 +12,41 @@ namespace Project1
     {
 
         static void Main(string[] args)
-        {
+        {  
+             
 
-            //DataModeler m = new();
-
-            // m.ParseJSON("Canadacities-JSON.json");
-
-            //Console.WriteLine(m.count());   
-
-
-
-            //string filename = "Canadacities.csv";
+            //string filename = "Canadacities-XML";
             //string filetype = "xml";
 
 
+            
+            string filename = "Canadacities-JSON";
+            string filetype = "json";
+
+            Statistics stats = new Statistics(filename, filetype);
+
+            //stats.DisplayCityInformation("Deer Lake"); //has a duplicate
+            stats.DisplayCityInformation("Tuktoyaktuk");
+            Console.WriteLine();  
+            stats.DisplayLargestPopulationCity();
+            Console.WriteLine();
+            stats.DisplaySmallestPopulationCity();
+            Console.WriteLine();
+            stats.CompareCitiesPopulation("Port Hardy", "Happy Valley - Goose Bay");
+            Console.WriteLine();
+            stats.DisplayProvincePopulation("Ontario");
+            Console.WriteLine();
+            // stats.DisplayProvinceCities("Ontario");
+            // stats.RankProvincesByPopulation();
+
+
+            //messing around with csv
             //var dict = File.ReadLines(filename).Select(line => line.Split(',')).ToDictionary(line => line[0], line => line[1]);
 
             //foreach(var kvp in dict)
             //{
             //    Console.WriteLine(kvp.Key +  "  "+kvp.Value);
             //}
-            string filename = "Canadacities-JSON";
-            string filetype = "json";
-
-            Statistics stats = new Statistics(filename, filetype);
-
-           // stats.DisplayCityInformation("Deer Lake");
-            stats.DisplayCityInformation("Tuktoyaktuk");
-            //Console.WriteLine();  
-            //stats.DisplayLargestPopulationCity();
-            //Console.WriteLine();
-            //stats.DisplaySmallestPopulationCity();
-            //stats.CompareCitiesPopulation("Port Hardy", "Happy Valley - Goose Bay");
-            // Console.WriteLine();
-            // stats.DisplayProvincePopulation("Ontario");
-            //Console.WriteLine();
-            //  stats.DisplayProvinceCities("Ontario");
-            // stats.RankProvincesByPopulation();
         }
     }
 }
