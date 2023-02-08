@@ -22,25 +22,33 @@ namespace Project1
 
 
 
-            string filename = "Canadacities-XML";
-            string filetype = "xml";
+            //string filename = "Canadacities.csv";
+            //string filetype = "xml";
 
-            //string filename = "Canadacities-JSON";
-            //string filetype = "json";
+
+            //var dict = File.ReadLines(filename).Select(line => line.Split(',')).ToDictionary(line => line[0], line => line[1]);
+
+            //foreach(var kvp in dict)
+            //{
+            //    Console.WriteLine(kvp.Key +  "  "+kvp.Value);
+            //}
+            string filename = "Canadacities-JSON";
+            string filetype = "json";
 
             Statistics stats = new Statistics(filename, filetype);
 
-            stats.DisplayCityInformation("Whitehorse");
+           // stats.DisplayCityInformation("Deer Lake");
+            stats.DisplayCityInformation("Tuktoyaktuk");
             //Console.WriteLine();  
             //stats.DisplayLargestPopulationCity();
             //Console.WriteLine();
             //stats.DisplaySmallestPopulationCity();
             //stats.CompareCitiesPopulation("Port Hardy", "Happy Valley - Goose Bay");
-            Console.WriteLine();
-            stats.DisplayProvincePopulation("Ontario");
-            Console.WriteLine();
+            // Console.WriteLine();
+            // stats.DisplayProvincePopulation("Ontario");
+            //Console.WriteLine();
             //  stats.DisplayProvinceCities("Ontario");
-            stats.RankProvincesByPopulation();
+            // stats.RankProvincesByPopulation();
         }
     }
 }

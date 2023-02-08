@@ -162,9 +162,16 @@ namespace Project1
 
         
         //display cition info 
+        //this is very tedious is maybe too much loops?
         public void DisplayCityInformation(string cname)
-        { 
+        {
+            //might chnge this sort of works but doest
+            int citycount = 1;
+            int userinput;
 
+            string province1, province2;
+
+            List<string> differentProvinceSameCityName = new();
 
             //display data:
             for (int i = 0; i < cityinfo.Count; i++)
@@ -172,16 +179,100 @@ namespace Project1
                 // Console.WriteLine(cityinfo[i].city);
                 if (cityinfo[i].city == cname)
                 {
-                    Console.WriteLine($"CityID: {cityinfo[i].CityID}");
-                    Console.WriteLine($"CityName: {cityinfo[i].city} ");
-                    Console.WriteLine($"City_Ascii: {cityinfo[i].CityAscii} ");
-                    Console.WriteLine($"Population: {cityinfo[i].Population} ");
-                    Console.WriteLine($"Province: {cityinfo[i].Province} ");
-                    Console.WriteLine($"Latitude: {cityinfo[i].Latitude}");
-                    Console.WriteLine($"Longitude: {cityinfo[i].Longitude}");
-                }
-            }
+                    //province1 = cityinfo[i].Province;
+                    differentProvinceSameCityName.Add(cityinfo[i].Province);
 
+                    citycount++;
+
+                    if (differentProvinceSameCityName.Count > 1)
+                    {
+                        //province2 = cityinfo[i].Province;
+
+                       // differentProvinceSameCityName.Add(cityinfo[i].Province);
+                        Console.WriteLine($"there seem to be {differentProvinceSameCityName.Count} cites with the same name which one were you looking for?");
+
+                        //display both cities
+                        for (int j = 0; j < differentProvinceSameCityName.Count; j++)
+                        {
+                            Console.WriteLine($"{j+1}. {cityinfo[i].city} of {differentProvinceSameCityName[j]}");
+                        }
+
+                        userinput = Int32.Parse( Console.ReadLine());
+
+                        if(userinput == 1) {
+
+                            
+
+                            //this is dumb)
+                            for(int k = 0; k < cityinfo.Count; k++)
+                            {
+                                if (cityinfo[k].city == cname && cityinfo[k].Province == differentProvinceSameCityName[0])
+                                {
+
+                                    Console.WriteLine($"CityID: {cityinfo[k].CityID}");
+                                    Console.WriteLine($"CityName: {cityinfo[k].city} ");
+                                    Console.WriteLine($"City_Ascii: {cityinfo[k].CityAscii} ");
+                                    Console.WriteLine($"Population: {cityinfo[k].Population} ");
+                                    Console.WriteLine($"Province: {cityinfo[k].Province} ");
+                                    Console.WriteLine($"Latitude: {cityinfo[k].Latitude}");
+                                    Console.WriteLine($"Longitude: {cityinfo[k].Longitude}");
+                                }
+                            }
+                           
+                           
+                           
+                        }else
+                        {
+                            for (int k = 0; k < cityinfo.Count; k++)
+                            {
+                                if (cityinfo[k].city == cname && cityinfo[k].Province == differentProvinceSameCityName[1])
+                                {
+
+                                    Console.WriteLine($"CityID: {cityinfo[k].CityID}");
+                                    Console.WriteLine($"CityName: {cityinfo[k].city} ");
+                                    Console.WriteLine($"City_Ascii: {cityinfo[k].CityAscii} ");
+                                    Console.WriteLine($"Population: {cityinfo[k].Population} ");
+                                    Console.WriteLine($"Province: {cityinfo[k].Province} ");
+                                    Console.WriteLine($"Latitude: {cityinfo[k].Latitude}");
+                                    Console.WriteLine($"Longitude: {cityinfo[k].Longitude}");
+                                }
+                            }
+
+                        }
+
+                    } 
+                     
+
+                    
+
+                }
+
+                 
+                    
+                
+            }
+            
+            for (int i = 0; i < cityinfo.Count; i++)
+            {
+
+                if (differentProvinceSameCityName.Count == 1)
+                {
+
+                    if (cityinfo[i].city == cname)
+                    {
+                        Console.WriteLine($"CityID: {cityinfo[i].CityID}");
+                        Console.WriteLine($"CityName: {cityinfo[i].city} ");
+                        Console.WriteLine($"City_Ascii: {cityinfo[i].CityAscii} ");
+                        Console.WriteLine($"Population: {cityinfo[i].Population} ");
+                        Console.WriteLine($"Province: {cityinfo[i].Province} ");
+                        Console.WriteLine($"Latitude: {cityinfo[i].Latitude}");
+                        Console.WriteLine($"Longitude: {cityinfo[i].Longitude}");
+
+
+                    }
+                }
+
+            }
         }
 
         //city methods
@@ -310,19 +401,22 @@ namespace Project1
         {
 
             //List<int> population = new List<int>();
-            Dictionary<string, int> population = new();
+         
             for(int i = 0; i < cityinfo.Count; i++)
-            {
-                population.Add(cityinfo[i].Province ,cityinfo[i].Population);
+            { 
             }
 
+             
+        }
 
-            //population.Sort();
 
-          foreach(var pair in population) {
-                Console.WriteLine(pair.Key + pair.Value);
-            }
-
+        //get capital
+        public void GetCapital(string province)
+        {
+            //could make antoehr dictionary 
+            //add the provinces and there capitals 
+            //and when user ask for captial get that pair.value 
+            //but again this might not be how he wants us to do it
         }
     }
 }
