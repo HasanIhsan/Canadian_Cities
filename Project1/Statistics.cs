@@ -184,6 +184,8 @@ namespace Project1
 
         }
 
+        //city methods
+
         //suppose to take in some sort of paramter?
         //returns the privince with the population
         public void DisplayLargestPopulationCity()
@@ -270,5 +272,57 @@ namespace Project1
 
 
 
+        //province methods
+
+        //display total population of a province
+        public void DisplayProvincePopulation(string ProvinceName)
+        {
+            int totalPopulationOfProvince = 0;
+
+            for(int i = 0; i <cityinfo.Count; i++)
+            {
+                if (cityinfo[i].Province == ProvinceName)
+                {
+                    totalPopulationOfProvince += cityinfo[i].Population;
+                }
+            }
+
+            Console.WriteLine($"The total population of {ProvinceName} is {totalPopulationOfProvince}");
+        }
+
+
+        //display all cities in a province
+        public void DisplayProvinceCities(string ProvinceName)
+        {
+            Console.WriteLine($"All cities in the province of {ProvinceName}");
+
+            for (int i = 0; i < cityinfo.Count; i++)
+            {
+                if (cityinfo[i].Province == ProvinceName)
+                {
+                    Console.WriteLine(cityinfo[i].city);
+                }
+            }
+        }
+
+        //order by pop
+        public void RankProvincesByPopulation()
+        {
+
+            //List<int> population = new List<int>();
+            Dictionary<string, int> population = new();
+            for(int i = 0; i < cityinfo.Count; i++)
+            {
+                population.Add(cityinfo[i].Province ,cityinfo[i].Population);
+            }
+
+
+            //population.Sort();
+
+          foreach(var pair in population) {
+                Console.WriteLine(pair.Key + pair.Value);
+            }
+
+        }
     }
 }

@@ -36,6 +36,11 @@ namespace Project1
             //Console.WriteLine();
             //stats.DisplaySmallestPopulationCity();
             //stats.CompareCitiesPopulation("Port Hardy", "Happy Valley - Goose Bay");
+            Console.WriteLine();
+            stats.DisplayProvincePopulation("Ontario");
+            Console.WriteLine();
+            //  stats.DisplayProvinceCities("Ontario");
+            stats.RankProvincesByPopulation();
         }
     }
 }
