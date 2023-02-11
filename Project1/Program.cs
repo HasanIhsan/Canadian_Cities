@@ -45,7 +45,7 @@ namespace Project1
                 numId++;
                 //add values to dict
               //  Console.WriteLine(parts[0] + " " + parts[1] + " " + parts[2] + " " + parts[3] + " " + parts[4] + " " + parts[5] + " " + parts[6] + " " + parts[7] + " " + parts[8]);
-                dict.Add(parts[0] + "_"+numId, parts[1] + "\n" + parts[2] + "\n" + parts[3] + "\n" + parts[4] + "\n" + parts[5] + "\n" + parts[6] + "\n" + parts[7] + "\n" + parts[8] + "\n");
+                dict.Add("_"+numId, parts[0] + "\n" + parts[1] + "\n" + parts[2] + "\n" + parts[3] + "\n" + parts[4] + "\n" + parts[5] + "\n" + parts[6] + "\n" + parts[7] + "\n" + parts[8] + "\n");
 
                 linecount++;
                 //just after 9 add dict (9 is a rand number)
@@ -89,7 +89,10 @@ namespace Project1
                 }
 
             }
-          //  Console.WriteLine(newcityinfo[0]);
+            //  Console.WriteLine(newcityinfo[0]);
+            //this contains:
+            //city,city_ascii,lat,lng,country,region,capital,population,id
+            //in that order
             for (int i = 0; i < newcityinfo.Count; ++i)
             {
                 Console.WriteLine(newcityinfo[i]);
