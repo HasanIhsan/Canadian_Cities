@@ -45,6 +45,7 @@ namespace Project1
                 numId++;
                 //add values to dict
               //  Console.WriteLine(parts[0] + " " + parts[1] + " " + parts[2] + " " + parts[3] + " " + parts[4] + " " + parts[5] + " " + parts[6] + " " + parts[7] + " " + parts[8]);
+                //this might be a work around for trying not to do <int, string> (i mean we r suppose to use a generic dictioary right? idk
                 dict.Add("_"+numId, parts[0] + "\n" + parts[1] + "\n" + parts[2] + "\n" + parts[3] + "\n" + parts[4] + "\n" + parts[5] + "\n" + parts[6] + "\n" + parts[7] + "\n" + parts[8] + "\n");
 
                 linecount++;
