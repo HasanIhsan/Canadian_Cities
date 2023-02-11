@@ -63,28 +63,37 @@ namespace Project1
             List<string> newcityinfo = new();
             string cityInfo = "";
 
+            //foreach(var pair in dict)
+            //{
+            //   // Console.WriteLine(pair.Value);
+            //    if (pair.Value.Contains("Bella Bella"))
+            //    {
+            //        Console.WriteLine(pair.Value);
+            //    }
+            //}
+
             for (int i = 0; i < list.Count; ++i)
             {
 
                 foreach (var pair in list[i])
                 {
                     // Console.WriteLine(pair.Key + " : " + pair.Value);
-                   // Console.WriteLine(pair.Value);
+                    // Console.WriteLine(pair.Value);
 
                     //for the city bella 
-                    if(pair.Value.Contains("Bella Bella"))
+                    if (pair.Value.Contains("Bella Bella"))
                     {
                         cityInfo = pair.Value; //ex: 
-                        
+
                         //split cityinfo at the newline
                         string[] splitcityinfo = cityInfo.Split("\n");
 
                         //then add the city info to list
-                        for( int j = 0; j < splitcityinfo.Length; ++j)
+                        for (int j = 0; j < splitcityinfo.Length; ++j)
                         {
                             newcityinfo.Add(splitcityinfo[j]);
-                        } 
-                       // Console.WriteLine(cityname);
+                        }
+                        // Console.WriteLine(cityname);
                     }
 
                 }
