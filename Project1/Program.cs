@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data;
 using System.Text.Json;
 using System.Xml.Linq;
 using System.Xml.Serialization;
@@ -62,7 +63,7 @@ namespace Project1
             //new list that should contain the cityinfo
             List<string> newcityinfo = new();
             string cityInfo = "";
-
+            int datacount = -1;
             //foreach(var pair in dict)
             //{
             //   // Console.WriteLine(pair.Value);
@@ -79,21 +80,31 @@ namespace Project1
                 {
                     // Console.WriteLine(pair.Key + " : " + pair.Value);
                     // Console.WriteLine(pair.Value);
+                    //cityInfo = pair.Value; //ex: 
 
-                    //for the city bella 
-                    if (pair.Value.Contains("Bella Bella"))
+                    ////split cityinfo at the newline
+                    //string[] splitcityinfo = cityInfo.Split("\n");
+
+                    ////then add the city info to list
+                    //for (int j = 0; j < splitcityinfo.Length; ++j)
+                    //{
+                    //    newcityinfo.Add(splitcityinfo[j]);
+                    //}
+                    //for the city bella
+                    if (pair.Value.Contains(" "))
                     {
+                        
                         cityInfo = pair.Value; //ex: 
 
-                        //split cityinfo at the newline
-                        string[] splitcityinfo = cityInfo.Split("\n");
+                       //split cityinfo at the newline
+                       string[] splitcityinfo = cityInfo.Split("\n");
 
                         //then add the city info to list
                         for (int j = 0; j < splitcityinfo.Length; ++j)
                         {
                             newcityinfo.Add(splitcityinfo[j]);
                         }
-                        // Console.WriteLine(cityname);
+                        
                     }
 
                 }
@@ -103,11 +114,76 @@ namespace Project1
             //this contains:
             //city,city_ascii,lat,lng,country,region,capital,population,id
             //in that order
+
+            List<cityinfo> infoofcities = new();
+
+            int cityid = 0;
+            string cityname = "";
+            string cityAscii = "";
+            int population = 0;
+            string province = "";
+            double latitude = 0;
+            double longitude = 0;
+
             for (int i = 0; i < newcityinfo.Count; ++i)
             {
-                Console.WriteLine(newcityinfo[i]);
-            }
+                //  Console.WriteLine(newcityinfo[i]);
 
+                //city,city_ascii,lat,lng,country,region,capital,population,id
+                // 0       1       2   3     4        5    6           7    8  < in array
+                 
+               // Console.WriteLine(newcityinfo[i]);
+                datacount++;
+                //Console.WriteLine(datacount);
+                if (datacount == 0)
+                {
+                    cityname = newcityinfo[i];
+                    //Console.WriteLine(cityname);
+                   // infoofcities.Add(new cityinfo(i, cityname, cityname, datacount, cityname, datacount, datacount));
+                }
+
+                if(datacount == 1)
+                {
+                    cityAscii = newcityinfo[i];
+                }
+                if (datacount == 2)
+                {
+                    latitude = Double.Parse(newcityinfo[i]);
+                }
+                if (datacount == 3)
+                {
+                    longitude = Double.Parse(newcityinfo[i]);
+                }
+                if (datacount == 5)
+                {
+                    province = newcityinfo[i];
+                }
+                if(datacount == 7)
+                {
+                    population = Int32.Parse(newcityinfo[i]);
+                }
+                if(datacount == 8)
+                {
+                    cityid = Int32.Parse(newcityinfo[i]);
+                }
+
+                //reset count reaching end of data set
+                if(datacount == 9)
+                {
+                    infoofcities.Add(new cityinfo(cityid, cityname, cityAscii, population, province, latitude, longitude));
+                    datacount = -1;
+                }
+                // infoofcities.Add(new cityinfo());
+
+            }
+            // Console.WriteLine(newcityinfo[19]);
+
+            //Console.WriteLine(infoofcities.Count); 139
+
+            for (int i = 0; i < infoofcities.Count; ++i)
+            {
+                Console.WriteLine(infoofcities[i].city);
+            }
             // dict.Add(parts[0], parts[1]);
 
             //Statistics stats = new Statistics(filename, filetype);
