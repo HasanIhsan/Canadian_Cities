@@ -1,24 +1,36 @@
 ﻿namespace Project1
 {
-    public class cityinfo
+    public struct Location//public struct allows for each variable to be represented in its own right, everywhere referenced.
     {
-        public int CityID { get; set; }
-        public string city{ get; set; }
-        public string CityAscii { get; set; }
-        public int Population { get; set; }
-        public string Province { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
+        public double Latitude { get; init; }
+        public double Longitude { get; init; }
+
+        public Location(double latitude, double longitude)
+        {
+            Latitude = latitude;
+            Longitude = longitude;
+        }
+    }
+
+    [Serializable]
+    public class CityInfo
+    {
+        
+        public int CityID { get; init; }
+        public string CityName{ get; init; }
+        public string CityAscii { get; init; }
+        public int Population { get; init; }
+        public string Province { get; init; }
+        public Location location { get; init; }
 
 
-        public cityinfo(int cityid, string cityname, string cityacii, int population, string province, double lat, double lng) { 
-            this.CityID = cityid;
-            this.city= cityname;
-            this.CityAscii= cityacii;
-            this.Population = population;
-            this.Province = province;
-            this.Latitude = lat;
-            this.Longitude = lng;
+        public CityInfo(int cityid, string cityname, string cityacii, int population, string province, double lat, double lng) { 
+            CityID = cityid;
+            CityName= cityname;
+            CityAscii= cityacii;
+            Population = population;
+            Province = province;
+            location = new Location(lat, lng);
         }
 
 
@@ -32,12 +44,15 @@
             return Population;
         }
 
-        public double GetLocation()
+        public Location GetLocation()
         {
-            return Latitude + Longitude;
+            return location; //You can call each longitude and latitude this way -> location.latitude;
         }
 
- 
+        public override string ToString()
+        {
+            return $"{CityName}, {Province}: Population of {Population}";
+        }
 
     }
 }

@@ -1,99 +1,92 @@
-﻿using static System.Net.Mime.MediaTypeNames;
-using System.Text.Json;
-using System.Xml.Linq;
+﻿
 
 namespace Project1
 {
+    using Dictionary_T = Dictionary<string, List<CityInfo>>;
+
     public class DataModeler
     {
+        const string JSON = "json";
+        const string XML = "xml";
+        const string CSV = "csv";
 
-         
-        List<Dictionary<string, string>> ValueList = new();
-     //  public List<cityinfo> cit = new(); //list of cities
+        protected Dictionary_T ValueList = new();
 
-        
+        public delegate void Parse(string fileName);
 
-        public delegate void ParseJson(string file);
-        public delegate void ParseXml(string file);
+        public Parse? GetParse;
 
-        public int count()
+        private void ParseJSON(string fileName)
         {
-            return ValueList.Count;
-        }
-
-
-        public void ParseJSON(string fileName)
-        {
-            //put all data read from file to string
-            string readData = File.ReadAllText(fileName);
-     
-             //for json
-            //this is simple code to deserialize json to a list od dictionary 
-            ValueList = JsonSerializer.Deserialize<List<Dictionary<string, string>>>(readData);
-
-           
-
-
-
-        }
-
-        public void ParseXML(string fileName)
-        {
-
-            int addcount = 0;
-
-            Dictionary<string, string> dataDictionary = new Dictionary<string, string>();
             
-            //put all data read from file to string
-            string readData = File.ReadAllText(fileName);
-            XDocument doc = XDocument.Parse(readData);
-            foreach (XElement element in doc.Descendants().Where(p => p.HasElements == false))
+        }
+        private void ParseXML(string fileName)
+        {
+            
+        }
+        private void ParseCSV(string fileName)
+        {
+            string raw;
+            if (File.Exists(fileName))
             {
-                int keyInt = 0;
-                string keyName = element.Name.LocalName;
+                raw = File.ReadAllText(fileName).ToString();
+            }
+            else
+                throw new FileNotFoundException($"File named {fileName} not found.", fileName);
 
-                while (dataDictionary.ContainsKey(keyName))
+            string[] countries = raw.Split("\r\n");
+
+            for (int i = 1; i < countries.Length; i++)
+            {
+                string[] cityData = countries[i].Split(",");
+                CityInfo city;
+                if (cityData.Length > 1)
                 {
-                    keyName = element.Name.LocalName + "_" + keyInt++;
-                }
+                    city = new CityInfo
+                    (
+                    int.Parse(cityData[8]),
+                    cityData[0],
+                    cityData[1],
+                    int.Parse(cityData[7]),
+                    cityData[5],
+                    double.Parse(cityData[2]),
+                    double.Parse(cityData[3])
+                    );
 
-                dataDictionary.Add(keyName, element.Value);
-                addcount++;
-
-
-                //every 9 values (which is in the file add to list
-                //there is prob a better way of doing this
-                if(addcount == 9)
-                {
-                    ValueList.Add(dataDictionary);
-                    addcount= 0;
+                    if (!ValueList.ContainsKey(city.CityName))
+                    {
+                        ValueList.Add(city.CityName, new());
+                        ValueList[city.CityName].Add(city);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{city}");
+                        ValueList[city.CityName].Add(city);
+                    }
                 }
             }
-
-             
-            
         }
 
-        public List<Dictionary<string, string>> ParseFile(string fileName, string filetype)
+        public Dictionary_T ParseFile(string fileName, string type)
         {
-
-            if (filetype.Contains("json"))
+           fileName = $"{fileName}.{type}";
+            switch(type.ToLower())
             {
-                ParseJson handler = ParseJSON;
-
-                handler.Invoke(fileName);
+                case JSON:
+                    GetParse = ParseJSON;
+                    break;
+                case XML:
+                    GetParse = ParseXML;
+                    break;
+                case CSV:
+                    GetParse = ParseCSV;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(type));
             }
-            
-            if (filetype.Contains("xml"))
-            {
-                
-                ParseXml handler = ParseXML;
-                handler.Invoke(fileName);
-            }
-
+            GetParse!.Invoke($"../../../data/{fileName}");
+            //"\Canadacities.csv"
             return ValueList;
-
         }
-
     }
 }
