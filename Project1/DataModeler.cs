@@ -1,6 +1,7 @@
 ﻿using static System.Net.Mime.MediaTypeNames;
 using System.Text.Json;
 using System.Xml.Linq;
+using System.Collections.Generic;
 
 namespace Project1
 {
@@ -15,6 +16,7 @@ namespace Project1
 
         public delegate void ParseJson(string file);
         public delegate void ParseXml(string file);
+        public delegate void ParseCsv(string file);
 
         public int count()
         {
@@ -66,7 +68,7 @@ namespace Project1
                 if(addcount == 9)
                 {
                     ValueList.Add(dataDictionary);
-                    addcount= 0;
+                    addcount = 0;
                 }
             }
 
@@ -74,8 +76,49 @@ namespace Project1
             
         }
 
+        public void ParseCSV(string fileName)
+        {
+            //put all data read from file to string
+          
+            Dictionary<string, string> dict = new Dictionary<string, string>();
+
+            StreamReader reader = new StreamReader(fileName);
+
+            int linecount = 0;
+            string line;
+            int numId = 0;
+
+            //readline
+            while ((line = reader.ReadLine()) != null)
+            {
+                //split line at ',' cause that is how scv files are saved as
+                string[] parts = line.Split(',');
+                numId++;
+                //add values to dict
+                //  Console.WriteLine(parts[0] + " " + parts[1] + " " + parts[2] + " " + parts[3] + " " + parts[4] + " " + parts[5] + " " + parts[6] + " " + parts[7] + " " + parts[8]);
+                //this might be a work around for trying not to do <int, string> (i mean we r suppose to use a generic dictioary right? idk
+                dict.Add("_" + numId, parts[0] + "\n" + parts[1] + "\n" + parts[2] + "\n" + parts[3] + "\n" + parts[4] + "\n" + parts[5] + "\n" + parts[6] + "\n" + parts[7] + "\n" + parts[8] + "\n");
+
+                linecount++;
+
+                //just after 9 add dict (9 is a rand number)
+                if (linecount == 9)
+                {
+                    ValueList.Add(dict);
+                }
+            }
+
+        }
+
         public List<Dictionary<string, string>> ParseFile(string fileName, string filetype)
         {
+
+            if(filetype.Contains("csv"))
+            {
+                
+                ParseCsv handler = ParseCSV;
+                handler.Invoke(fileName);
+            }
 
             if (filetype.Contains("json"))
             {

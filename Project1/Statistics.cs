@@ -31,6 +31,107 @@ namespace Project1
             double latitude = 0;
             double longitude = 0;
 
+            //say if the user clicks on a file that is a csv
+            //this one might be a bit confusing 
+            //cause the modeler parser only really return 1 index in the citycatalog (that is one string with newline characters for all cities info)
+            //the it splits them on the newlines and adds them to the split city info array
+            //then all the values of that array are added to the newcityinfo list
+            //with the current code the TKey of the dict is never used
+            //we're only looking at the TValues
+            if (filetype.Contains("csv"))
+            {
+                //add data from parse file method
+                citycatalog.AddRange(modeler.ParseFile(fullfilename, filetype));
+
+                string cityInfo = "";
+                int datacount = -1;
+
+                //for putting alldaata from city catalog into new list
+                //city catelog at this point will hold all data in a string
+                List<string> newcityinfo = new();
+
+                for (int i = 0; i < citycatalog.Count; ++i)
+                {
+
+                    foreach (var pair in citycatalog[i])
+                    {
+                        // Console.WriteLine(pair.Key + " : " + pair.Value);
+                        // Console.WriteLine(pair.Value);
+                        
+                       
+                        if (pair.Value.Contains(" "))
+                        {
+
+                            cityInfo = pair.Value; //ex: 
+
+                            //split cityinfo at the newline
+                            string[] splitcityinfo = cityInfo.Split("\n");
+
+                            //then add the city info to list
+                            for (int j = 0; j < splitcityinfo.Length; ++j)
+                            {
+                                newcityinfo.Add(splitcityinfo[j]);
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                  
+                //and looping through the array to find where the index equals the values we need
+                //and add a new cityinfo item to its own list
+                for (int i = 0; i < newcityinfo.Count; ++i)
+                {
+                    //  Console.WriteLine(newcityinfo[i]);
+
+                    //this contains:
+                    //city,city_ascii,lat,lng,country,region,capital,population,id
+                    // 0       1       2   3     4        5    6           7     8  < index in array
+
+                
+                    datacount++;
+                    //Console.WriteLine(datacount);
+
+                    //this works like the index for example:
+                    //when datacount is 0 then the value at that index of i is the city name
+                    if (datacount == 0)
+                    {
+                        cityname = newcityinfo[i];
+                        //Console.WriteLine(cityname); 
+                    }
+                    else if (datacount == 1)
+                    {
+                        cityAscii = newcityinfo[i];
+                    }else if (datacount == 2)
+                    {
+                        latitude = Double.Parse(newcityinfo[i]);
+                    }else if (datacount == 3)
+                    {
+                        longitude = Double.Parse(newcityinfo[i]);
+                    }else if (datacount == 5)
+                    {
+                        province = newcityinfo[i];
+                    }else if (datacount == 7)
+                    {
+                        population = Int32.Parse(newcityinfo[i]);
+                    }else if (datacount == 8)
+                    {
+                        cityid = Int32.Parse(newcityinfo[i]);
+                    }else           
+                    if (datacount == 9)     //reset count reaching end of data set
+                    {
+                        //add cityinfo and reset datacount to -1
+                        cityinfo.Add(new cityinfo(cityid, cityname, cityAscii, population, province, latitude, longitude));
+                        datacount = -1;
+                    }
+            
+
+                }
+            }
+
+            //say if the user clicks on a file that is a xml
             if (filetype.Contains("xml"))
             {
 
@@ -39,8 +140,7 @@ namespace Project1
                 {
 
                     foreach (var pair in citycatalog[i])
-                    {
-                        //  Console.WriteLine($"\"{pair.Key}\" : \"{pair.Value}\"");
+                    { 
 
                         //takes data from list of dictionary data and puts it into a list of cityinfo
                         if (pair.Key == "id_" + i)
@@ -108,9 +208,7 @@ namespace Project1
                     }
                     else
                         foreach (var pair in citycatalog[i])
-                        {
-                            //  Console.WriteLine($"\"{pair.Key}\" : \"{pair.Value}\"");
-
+                        { 
                             //takes data from list of dictionary data and puts it into a list of cityinfo
                             if (pair.Key == "id")
                             {
