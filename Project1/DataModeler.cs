@@ -70,7 +70,7 @@ namespace Project1
             
            xmlCities test = (xmlCities)serializer.Deserialize(reader);
 
-          foreach (var cityinfo in test.info)
+          foreach (var cityinfo in test.cityinfo)
            {
               // Console.WriteLine($"  {cityinfo.CityID}.  {cityinfo.CityName}  ");
 
@@ -85,9 +85,9 @@ namespace Project1
                 cityinfo.Longitude
                 );
 
-                Console.WriteLine();
-                Console.WriteLine(cityInfo);
-                Console.WriteLine();
+                //Console.WriteLine();
+                //Console.WriteLine(cityInfo);
+                //Console.WriteLine();
 
                 if (!ValueList.ContainsKey(cityInfo.CityName))
                 {
@@ -100,7 +100,7 @@ namespace Project1
                     ValueList[cityInfo.CityName].Add(cityInfo);
                 }
 
-                Console.WriteLine(cityInfo);
+              //  Console.WriteLine(cityInfo);
             }
 
 
