@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.VisualBasic;
+using System.Collections.Generic;
 using System.Runtime;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace Project1
 {
@@ -65,7 +67,25 @@ namespace Project1
             int cityPopulations = 0;
             int cityIDs = 0;
 
+            var wr = new StringWriter();
+            doc.Save(wr);
 
+            XmlSerializer serializer = new XmlSerializer(typeof(xmlCities));
+
+            using (StringReader reader = new StringReader(wr.ToString()))
+            { 
+                var test = (xmlCities)serializer.Deserialize(reader);
+
+                foreach (var course in test.info)
+                {
+                    Console.WriteLine($"  {course.CityID}.  {course.CityName}  ");
+                }
+            }
+
+            //foreach (var course in test.CityName)
+            //{
+            //    Console.WriteLine($"Course No {course}. ");
+            //}
 
             //foreach (var item in CanadaCities)
             //{
@@ -89,81 +109,81 @@ namespace Project1
             //        //Console.WriteLine();
             //    }
             //}
-            foreach (var item in CanadaCities)
-            {
-                foreach (XElement citydes in item.Descendants("CanadaCity"))
-                {
-                    foreach (XElement name in citydes.Descendants("city"))
-                    {
+            //foreach(var item in CanadaCities)
+            //{
+            //    foreach (XElement citydes in item.Descendants("CanadaCity"))
+            //    {
+            //         foreach(XElement name in citydes.Descendants("city"))
+            //        {
 
-                        cityNames = name.Value;
+            //            cityNames = name.Value;
 
-                    }
-                    foreach (XElement ascii in citydes.Descendants("city_ascii"))
-                    {
+            //        }
+            //        foreach (XElement ascii in citydes.Descendants("city_ascii"))
+            //        {
 
-                        cityAsciis = ascii.Value;
+            //            cityAsciis = ascii.Value;
 
-                    }
-                    foreach (XElement lats in citydes.Descendants("lat"))
-                    {
+            //        }
+            //        foreach (XElement lats in citydes.Descendants("lat"))
+            //        {
 
-                        cityLats = double.Parse(lats.Value);
+            //            cityLats = double.Parse( lats.Value);
 
-                    }
-                    foreach (XElement lng in citydes.Descendants("lng"))
-                    {
+            //        }
+            //        foreach (XElement lng in citydes.Descendants("lng"))
+            //        {
 
-                        cityLngs = double.Parse(lng.Value);
+            //            cityLngs =  double.Parse(lng.Value);
 
-                    }
-                    foreach (XElement region in citydes.Descendants("region"))
-                    {
+            //        }
+            //        foreach (XElement region in citydes.Descendants("region"))
+            //        {
 
-                        cityRegions = region.Value;
+            //            cityRegions = region.Value;
 
-                    }
-                    foreach (XElement population in citydes.Descendants("population"))
-                    {
+            //        }
+            //        foreach (XElement population in citydes.Descendants("population"))
+            //        {
 
-                        cityPopulations = int.Parse(population.Value);
+            //            cityPopulations = int.Parse(population.Value);
 
 
-                    }
-                    foreach (XElement ids in citydes.Descendants("id"))
-                    {
+            //        }
+            //        foreach (XElement ids in citydes.Descendants("id"))
+            //        {
 
-                        cityIDs = int.Parse(ids.Value);
+            //            cityIDs = int.Parse(ids.Value);
 
-                    }
+            //        }
 
-                    cityInfo = new CityInfo
-                    (
-                    cityIDs,
-                    cityNames,
-                    cityAsciis,
-                    cityPopulations,
-                    cityRegions,
-                    cityLats,
-                    cityLngs
-                    );
+            //        cityInfo = new CityInfo
+            //        (
+            //        cityIDs,
+            //        cityNames,
+            //        cityAsciis,
+            //        cityPopulations,
+            //        cityRegions,
+            //        cityLats,
+            //        cityLngs
+            //        );
 
-                    Console.WriteLine();
-                    Console.WriteLine(cityInfo);
-                    Console.WriteLine();
+            //        Console.WriteLine();
+            //        Console.WriteLine(cityInfo);
+            //        Console.WriteLine();
 
-                    if (!ValueList.ContainsKey(cityInfo.CityName))
-                    {
-                        ValueList.Add(cityInfo.CityName, new());
-                        ValueList[cityInfo.CityName].Add(cityInfo);
-                    }
-                    else
-                    {
-                        //Console.WriteLine($"{cityInfo}");
-                        ValueList[cityInfo.CityName].Add(cityInfo);
-                    }
-                }
-            }
+            //        if (!ValueList.ContainsKey(cityInfo.CityName))
+            //        {
+            //            ValueList.Add(cityInfo.CityName, new());
+            //            ValueList[cityInfo.CityName].Add(cityInfo);
+            //        }
+            //        else
+            //        {
+            //            //Console.WriteLine($"{cityInfo}");
+            //            ValueList[cityInfo.CityName].Add(cityInfo);
+            //        }
+            //    }
+            //}
 
 
 

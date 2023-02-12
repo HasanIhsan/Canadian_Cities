@@ -1,8 +1,12 @@
-﻿namespace Project1
+﻿using System.Xml.Serialization;
+
+namespace Project1
 {
     public struct Location//public struct allows for each variable to be represented in its own right, everywhere referenced.
     {
+        [XmlAttribute(AttributeName = "lat")]
         public double Latitude { get; init; }
+        [XmlAttribute(AttributeName = "lng")]
         public double Longitude { get; init; }
 
         public Location(double latitude, double longitude)
@@ -13,14 +17,37 @@
     }
 
     [Serializable]
+    [XmlRoot(ElementName = "CanadaCit")]
     public class CityInfo
     {
+ //       <city>Selkirk</city>
+	//<city_ascii>Selkirk</city_ascii>
+	//<lat>50.15</lat>
+	//<lng>-96.883300000000006</lng>
+	//<country>Canada</country>
+	//<region>Manitoba</region>
+	//<capital/>
+	//<population>9986</population>
+	//<id>1124499880</id>
 
-        public int CityID { get; init; }
+       
+        [XmlElement(ElementName = "city")]
         public string CityName { get; init; }
+        [XmlElement(ElementName = "city_ascii")]
         public string CityAscii { get; init; }
-        public int Population { get; init; }
+        [XmlElement(ElementName = "lat")]
+        public double Latitude { get; init; }
+        [XmlElement(ElementName = "lng")]
+        public double Longitude { get; init; }
+       
+        [XmlElement(ElementName = "region")]
         public string Province { get; init; }
+        [XmlElement(ElementName = "population")]
+        public int Population { get; init; }
+        [XmlElement(ElementName = "id")]
+        public int CityID { get; init; }
+
+
         public Location location { get; init; }
 
 
@@ -34,6 +61,10 @@
             location = new Location(lat, lng);
         }
 
+        public CityInfo()
+        {
+
+        }
 
         public string GetProvince()
         {
