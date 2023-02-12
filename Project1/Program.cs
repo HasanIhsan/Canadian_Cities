@@ -35,9 +35,9 @@ namespace Project1
            // Statistics stats = new Statistics(filename, filetype);
 
             //stats.DisplayCityInformation("Deer Lake"); //has a duplicate
-            //stats.DisplayCityInformation("Tuktoyaktuk");
+            stats.DisplayCityInformation("Tuktoyaktuk");
             //Console.WriteLine();
-            //stats.DisplayLargestPopulationCity();
+            stats.DisplayLargestPopulationCity();
             //Console.WriteLine();
             //stats.DisplaySmallestPopulationCity();
             //Console.WriteLine();
