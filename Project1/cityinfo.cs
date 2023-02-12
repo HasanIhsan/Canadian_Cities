@@ -35,37 +35,37 @@ namespace Project1
     public class CityInfo
     {
         [JsonProperty("id")]
-        [XmlElement(ElementName ="id")]
-        public int CityID { get; set; }
+        [XmlElement(ElementName = "id")]
+        public int CityID { get; set; } = 0;
 
         [JsonProperty("city")]
         [XmlElement(ElementName = "city")]
-        public string CityName { get; set; }
+        public string CityName { get; set; } = "";
 
         [JsonProperty("city_ascii")]
         [XmlElement(ElementName = "city_ascii")]
-        public string? CityAscii { get; set; }
+        public string CityAscii { get; set; } = "";
 
         [JsonProperty("population")]
         [XmlElement(ElementName = "population")]
-        public int Population { get; set; }
+        public int Population { get; set; } = 0;
 
         [JsonProperty("region")]
         [XmlElement(ElementName = "region")]
-        public string? Province { get; set; }
+        public string Province { get; set; } = "";
 
         [JsonProperty("lat")]
         [XmlElement(ElementName = "lat")]
-        public double Lat { get; set; }
+        public double Lat { get; set; } = 0.0;
 
         [JsonProperty("lng")]
         [XmlElement(ElementName = "lng")]
-        public double Lng { get; set; }
+        public double Lng { get; set; } = 0.0;
 
         public CityInfo() { }
 
-        public CityInfo(int cityid, string cityname, string? cityacii,
-            int population, string? province, double lat, double lng) {
+        public CityInfo(int cityid, string cityname, string cityacii,
+            int population, string province, double lat, double lng) {
             
             CityID = cityid;
             CityName = cityname;

@@ -16,11 +16,6 @@ namespace Project1
         {
             DataModeler dm = new DataModeler();
             CityCatelogue = dm.ParseFile(fileName, fileType);
-            CityInfo? famous = GetCity("Victoria", "British Columbia");
-
-            if(famous != null) { 
-                Console.WriteLine($"Population of {famous.Province} is {DisplayProvincePopulation(famous.Province)}\nPopulation of {famous.CityName} is {famous.Population}");
-            }
         }
 
         //City Methods
@@ -55,7 +50,7 @@ namespace Project1
                 
             Process.Start(new ProcessStartInfo(($"https://www.latlong.net/c/?lat={city.Lat}&long={city.Lng}")) { UseShellExecute = true });
         }
-        //=acos(sin(lat1)*sin(lat2)+cos(lat1)*cos(lat2)*cos(lon2-lon1))*6371
+
         public int? CalculateDistanceBetweenCities(CityInfo city1, CityInfo city2)
         {
             string key = "AIzaSyBuWX6ELFtlNhqHk5EcKrmXWBdrmHeNm5A";
@@ -85,29 +80,37 @@ namespace Project1
         public int DisplayProvincePopulation(string province)
         {
             int i = 0;
-            //CityCatelogue.Sum((kvp) => kvp.Value.Sum((city) => i += city.Province == province ? city.Population : 0));
 
-            //foreach (CityInfo info in kvp.Value)
-            //        i += info.Province == province ? info.Population : 0;
-            //);
-            foreach (KeyValuePair<string, List<CityInfo>> kvp in CityCatelogue)
-            {
-                foreach (CityInfo city in kvp.Value)
-                {
-                    i += city.Province == province ? city.Population : 0;
-                }
-            }
+            CityCatelogue.ForEach(
+                (kvp) => kvp.Value.ForEach(
+                    (city) => i += city.Province == province
+                    ? city.Population
+                    : 0));
+
             return i;
         }
 
-        public List<CityInfo> DisplayProvinceCities(string province)
+        public Dictionary_T DisplayProvinceCities(string province)
         {
-            return CityCatelogue.First().Value;
+            return CityCatelogue.Where(
+                    (kvp) => kvp.Value.Find(
+                        (city) => city.Province == province) != null
+                        ).ToDictionary((x) => x.Key, (y) => y.Value);
         }
 
-        public List<string> RandProvinceByPopulation()
+        public Dictionary<string, int> RankProvinceByPopulation()
         {
-            return new List<string>();
+            IEnumerable<string> provinces = from kvp in CityCatelogue from city in kvp.Value select city.Province;
+            List<string> s = provinces.Distinct().ToList();
+            Dictionary_T provAndPop = new Dictionary_T();
+            foreach (string province in s)
+            {
+                int id = 0;
+                provAndPop.Add(province, new List<CityInfo>());
+                provAndPop[province].Add(new CityInfo(id++, province, province, DisplayProvincePopulation(province), province, 0.0, 0.0));
+            }
+
+            return SortCities(new OrderByPopulation(), provAndPop).ToDictionary(x => x.CityName, y => y.Population);
         }
 
         public List<CityInfo> RankProvincesByCities()
