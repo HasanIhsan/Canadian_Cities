@@ -59,28 +59,50 @@ namespace Project1
 
             
             
-            string cityNames = "";
-            string cityAsciis = "";
-            double cityLats = 0.0;
-            double cityLngs = 0.0;
-            string cityRegions = "";
-            int cityPopulations = 0;
-            int cityIDs = 0;
+            
 
             var wr = new StringWriter();
             doc.Save(wr);
 
             XmlSerializer serializer = new XmlSerializer(typeof(xmlCities));
 
-            using (StringReader reader = new StringReader(wr.ToString()))
-            { 
-                var test = (xmlCities)serializer.Deserialize(reader);
+            StringReader reader = new StringReader(wr.ToString());
+            
+           xmlCities test = (xmlCities)serializer.Deserialize(reader);
 
-                foreach (var course in test.info)
+          foreach (var cityinfo in test.info)
+           {
+              // Console.WriteLine($"  {cityinfo.CityID}.  {cityinfo.CityName}  ");
+
+                cityInfo = new CityInfo
+                (
+                cityinfo.CityID,
+                cityinfo.CityName,
+                cityinfo.CityAscii,
+                cityinfo.Population,
+                cityinfo.Province,
+                cityinfo.Latitude,
+                cityinfo.Longitude
+                );
+
+                Console.WriteLine();
+                Console.WriteLine(cityInfo);
+                Console.WriteLine();
+
+                if (!ValueList.ContainsKey(cityInfo.CityName))
                 {
-                    Console.WriteLine($"  {course.CityID}.  {course.CityName}  ");
+                    ValueList.Add(cityInfo.CityName, new());
+                    ValueList[cityInfo.CityName].Add(cityInfo);
                 }
+                else
+                {
+                    //Console.WriteLine($"{cityInfo}");
+                    ValueList[cityInfo.CityName].Add(cityInfo);
+                }
+
+                Console.WriteLine(cityInfo);
             }
+
 
             //foreach (var course in test.CityName)
             //{

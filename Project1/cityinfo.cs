@@ -20,15 +20,7 @@ namespace Project1
     [XmlRoot(ElementName = "CanadaCit")]
     public class CityInfo
     {
- //       <city>Selkirk</city>
-	//<city_ascii>Selkirk</city_ascii>
-	//<lat>50.15</lat>
-	//<lng>-96.883300000000006</lng>
-	//<country>Canada</country>
-	//<region>Manitoba</region>
-	//<capital/>
-	//<population>9986</population>
-	//<id>1124499880</id>
+ //       
 
        
         [XmlElement(ElementName = "city")]
