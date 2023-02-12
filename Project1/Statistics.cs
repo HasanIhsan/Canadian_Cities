@@ -116,7 +116,7 @@ namespace Project1
                     if (city.GetPopulation() > largestPopulation)
                     {
                         largestPopulation = city.GetPopulation();
-                        largestPopulationProvince = city.Province;
+                        largestPopulationProvince = city.GetProvince();
                         largestPopulationCity = city.CityName;
                     }
                 }
