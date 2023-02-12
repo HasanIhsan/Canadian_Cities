@@ -1,6 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System.Xml.Linq;
-using System.Xml;
 using System.Xml.Serialization;
 
 namespace Project1
@@ -113,5 +111,4 @@ namespace Project1
             }   
         }
     }
-
 }
