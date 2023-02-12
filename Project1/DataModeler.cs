@@ -1,4 +1,4 @@
-﻿
+﻿using Newtonsoft.Json;
 
 namespace Project1
 {
@@ -18,21 +18,39 @@ namespace Project1
 
         private void ParseJSON(string fileName)
         {
+            string raw;
+
+            CheckFile(fileName, out raw);
+
+            List<CityInfo>? info = JsonConvert.DeserializeObject<List<CityInfo>>(raw);
             
+            if(info == null )
+                throw new FileLoadException($"File not found, {fileName} is not serializable in expected format.", fileName);
+
+            foreach(CityInfo i in info)
+            {
+                if(ValueList.ContainsKey(i.CityName))
+                {
+                    ValueList[i.CityName].Add(i);
+                }
+                else
+                {
+                    ValueList.Add(i.CityName, new());
+                    ValueList[i.CityName].Add(i);
+                }
+            }
         }
+
         private void ParseXML(string fileName)
         {
             
         }
+
         private void ParseCSV(string fileName)
         {
             string raw;
-            if (File.Exists(fileName))
-            {
-                raw = File.ReadAllText(fileName).ToString();
-            }
-            else
-                throw new FileNotFoundException($"File named {fileName} not found.", fileName);
+            
+            CheckFile(fileName,out raw);
 
             string[] countries = raw.Split("\r\n");
 
@@ -60,7 +78,6 @@ namespace Project1
                     }
                     else
                     {
-                        Console.WriteLine($"{city}");
                         ValueList[city.CityName].Add(city);
                     }
                 }
@@ -70,6 +87,7 @@ namespace Project1
         public Dictionary_T ParseFile(string fileName, string type)
         {
            fileName = $"{fileName}.{type}";
+
             switch(type.ToLower())
             {
                 case JSON:
@@ -84,9 +102,21 @@ namespace Project1
                 default:
                     throw new ArgumentOutOfRangeException(nameof(type));
             }
+
             GetParse!.Invoke($"../../../data/{fileName}");
-            //"\Canadacities.csv"
+
             return ValueList;
         }
+
+        private void CheckFile(string fileName, out string raw)
+        {
+            if (File.Exists(fileName))
+            {
+                raw = File.ReadAllText(fileName).ToString();
+            }
+            else
+                throw new FileNotFoundException($"File named {fileName} not found.", fileName);
+        }
     }
+
 }
