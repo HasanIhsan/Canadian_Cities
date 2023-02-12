@@ -1,4 +1,7 @@
 ﻿using Newtonsoft.Json;
+using System.Xml.Linq;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Project1
 {
@@ -18,24 +21,19 @@ namespace Project1
 
         private void ParseJSON(string fileName)
         {
-            string raw;
+            CheckFile(fileName);
 
-            CheckFile(fileName, out raw);
-
-            List<CityInfo>? info = JsonConvert.DeserializeObject<List<CityInfo>>(raw);
+            List<CityInfo>? info = JsonConvert.DeserializeObject<List<CityInfo>>(File.ReadAllText(fileName));
             
             if(info == null )
                 throw new FileLoadException($"File not found, {fileName} is not serializable in expected format.", fileName);
 
-            foreach(CityInfo i in info)
+            foreach(CityInfo i in info) 
             {
-                if(ValueList.ContainsKey(i.CityName))
+                if (i.CityName.Length > 0)
                 {
-                    ValueList[i.CityName].Add(i);
-                }
-                else
-                {
-                    ValueList.Add(i.CityName, new());
+                    if (!ValueList.ContainsKey(i.CityName))
+                        ValueList.Add(i.CityName, new());
                     ValueList[i.CityName].Add(i);
                 }
             }
@@ -43,16 +41,28 @@ namespace Project1
 
         private void ParseXML(string fileName)
         {
-            
+            CheckFile(fileName);
+
+            XmlSerializer serial = new(typeof(AllCities));
+
+            List<CityInfo>? info = ((AllCities?)serial.Deserialize(File.OpenText(fileName)))?.Cities_;
+
+            foreach (CityInfo i in info!)
+            {
+                if (i.CityName.Length > 0)
+                {
+                    if (!ValueList.ContainsKey(i.CityName))
+                        ValueList.Add(i.CityName, new());
+                    ValueList[i.CityName].Add(i);
+                }
+            }
         }
 
         private void ParseCSV(string fileName)
         {
-            string raw;
-            
-            CheckFile(fileName,out raw);
+            CheckFile(fileName);
 
-            string[] countries = raw.Split("\r\n");
+            string[] countries = File.ReadAllText(fileName).Split("\r\n");
 
             for (int i = 1; i < countries.Length; i++)
             {
@@ -60,26 +70,13 @@ namespace Project1
                 CityInfo city;
                 if (cityData.Length > 1)
                 {
-                    city = new CityInfo
-                    (
-                    int.Parse(cityData[8]),
-                    cityData[0],
-                    cityData[1],
-                    int.Parse(cityData[7]),
-                    cityData[5],
-                    double.Parse(cityData[2]),
-                    double.Parse(cityData[3])
-                    );
+                    city = new CityInfo (int.Parse(cityData[8]),
+                    cityData[0], cityData[1], int.Parse(cityData[7]),
+                    cityData[5], double.Parse(cityData[2]), double.Parse(cityData[3]));
 
                     if (!ValueList.ContainsKey(city.CityName))
-                    {
                         ValueList.Add(city.CityName, new());
-                        ValueList[city.CityName].Add(city);
-                    }
-                    else
-                    {
-                        ValueList[city.CityName].Add(city);
-                    }
+                    ValueList[city.CityName].Add(city);
                 }
             }
         }
@@ -108,14 +105,12 @@ namespace Project1
             return ValueList;
         }
 
-        private void CheckFile(string fileName, out string raw)
+        private void CheckFile(string fileName)
         {
-            if (File.Exists(fileName))
+            if (!File.Exists(fileName))
             {
-                raw = File.ReadAllText(fileName).ToString();
-            }
-            else
                 throw new FileNotFoundException($"File named {fileName} not found.", fileName);
+            }   
         }
     }
 
