@@ -25,15 +25,17 @@ namespace Project1
             //string filetype = "json";
              
 
-            string filename = "Canadacities";
-            string filetype = "csv";
+            //string filename = "Canadacities";
+            //string filetype = "csv";
 
-   
+            Statistics stats = new("Canadacities-XML", "xml");
 
-            Statistics stats = new Statistics(filename, filetype);
+
+           
+           // Statistics stats = new Statistics(filename, filetype);
 
             //stats.DisplayCityInformation("Deer Lake"); //has a duplicate
-            stats.DisplayCityInformation("Tuktoyaktuk");
+            //stats.DisplayCityInformation("Tuktoyaktuk");
             //Console.WriteLine();
             //stats.DisplayLargestPopulationCity();
             //Console.WriteLine();
@@ -48,5 +50,5 @@ namespace Project1
 
  
         }
-        }
+    }
 }
