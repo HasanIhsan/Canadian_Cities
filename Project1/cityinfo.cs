@@ -28,6 +28,10 @@ namespace Project1
         {
             Cities_ = new List<CityInfo>();
         }
+        public AllCities(List<CityInfo> cities_)
+        {
+            Cities_ = cities_;
+        }
     }
 
     [Serializable]

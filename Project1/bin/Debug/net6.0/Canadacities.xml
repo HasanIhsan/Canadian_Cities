@@ -1,0 +1,2503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CanadaCities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CanadaCity>
+    <id>1124499880</id>
+    <city>Selkirk</city>
+    <city_ascii>Selkirk</city_ascii>
+    <population>9986</population>
+    <region>Manitoba</region>
+    <lat>50.15</lat>
+    <lng>-96.8833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124344083</id>
+    <city>Trepassey</city>
+    <city_ascii>Trepassey</city_ascii>
+    <population>398</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>46.737</lat>
+    <lng>-53.3633</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124403382</id>
+    <city>Schefferville</city>
+    <city_ascii>Schefferville</city_ascii>
+    <population>471</population>
+    <region>Québec</region>
+    <lat>54.8</lat>
+    <lng>-66.8167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124348186</id>
+    <city>Whitehorse</city>
+    <city_ascii>Whitehorse</city_ascii>
+    <population>23276</population>
+    <region>Yukon</region>
+    <lat>60.7167</lat>
+    <lng>-135.05</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124733447</id>
+    <city>Trout River</city>
+    <city_ascii>Trout River</city_ascii>
+    <population>452</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>49.4837</lat>
+    <lng>-58.1166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124108820</id>
+    <city>Yorkton</city>
+    <city_ascii>Yorkton</city_ascii>
+    <population>15172</population>
+    <region>Saskatchewan</region>
+    <lat>51.2171</lat>
+    <lng>-102.4665</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124839247</id>
+    <city>Antigonish</city>
+    <city_ascii>Antigonish</city_ascii>
+    <population>6739</population>
+    <region>Nova Scotia</region>
+    <lat>45.6269</lat>
+    <lng>-61.9982</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124310517</id>
+    <city>Gander</city>
+    <city_ascii>Gander</city_ascii>
+    <population>3345</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>48.95</lat>
+    <lng>-54.55</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124806860</id>
+    <city>Berens River</city>
+    <city_ascii>Berens River</city_ascii>
+    <population>892</population>
+    <region>Manitoba</region>
+    <lat>52.3666</lat>
+    <lng>-97.0333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124109240</id>
+    <city>Port-Menier</city>
+    <city_ascii>Port-Menier</city_ascii>
+    <population>263</population>
+    <region>Québec</region>
+    <lat>49.8226</lat>
+    <lng>-64.348</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124492484</id>
+    <city>Wetaskiwin</city>
+    <city_ascii>Wetaskiwin</city_ascii>
+    <population>11823</population>
+    <region>Alberta</region>
+    <lat>52.9666</lat>
+    <lng>-113.3833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124131561</id>
+    <city>Shamattawa</city>
+    <city_ascii>Shamattawa</city_ascii>
+    <population>870</population>
+    <region>Manitoba</region>
+    <lat>55.8504</lat>
+    <lng>-92.0833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124152692</id>
+    <city>Steinbach</city>
+    <city_ascii>Steinbach</city_ascii>
+    <population>9729</population>
+    <region>Manitoba</region>
+    <lat>49.5171</lat>
+    <lng>-96.6833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124398712</id>
+    <city>Thunder Bay</city>
+    <city_ascii>Thunder Bay</city_ascii>
+    <population>99334</population>
+    <region>Ontario</region>
+    <lat>48.4462</lat>
+    <lng>-89.275</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124541904</id>
+    <city>Oshawa</city>
+    <city_ascii>Oshawa</city_ascii>
+    <population>450963</population>
+    <region>Ontario</region>
+    <lat>43.88</lat>
+    <lng>-78.85</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124426272</id>
+    <city>Chicoutimi</city>
+    <city_ascii>Chicoutimi</city_ascii>
+    <population>53940</population>
+    <region>Québec</region>
+    <lat>48.4333</lat>
+    <lng>-71.0667</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124823140</id>
+    <city>Melville</city>
+    <city_ascii>Melville</city_ascii>
+    <population>4279</population>
+    <region>Saskatchewan</region>
+    <lat>50.9333</lat>
+    <lng>-102.8</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124093123</id>
+    <city>Brooks</city>
+    <city_ascii>Brooks</city_ascii>
+    <population>14163</population>
+    <region>Alberta</region>
+    <lat>50.5671</lat>
+    <lng>-111.9</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124144510</id>
+    <city>Dauphin</city>
+    <city_ascii>Dauphin</city_ascii>
+    <population>9077</population>
+    <region>Manitoba</region>
+    <lat>51.15</lat>
+    <lng>-100.05</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124191574</id>
+    <city>Smithers</city>
+    <city_ascii>Smithers</city_ascii>
+    <population>6245</population>
+    <region>British Columbia</region>
+    <lat>54.7666</lat>
+    <lng>-127.1666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124878479</id>
+    <city>Terrace</city>
+    <city_ascii>Terrace</city_ascii>
+    <population>19443</population>
+    <region>British Columbia</region>
+    <lat>54.5</lat>
+    <lng>-128.5833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124525451</id>
+    <city>Lutselke</city>
+    <city_ascii>Lutselke</city_ascii>
+    <population>102</population>
+    <region>Northwest Territories</region>
+    <lat>62.4001</lat>
+    <lng>-110.7333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124211405</id>
+    <city>Resolute</city>
+    <city_ascii>Resolute</city_ascii>
+    <population>250</population>
+    <region>Nunavut</region>
+    <lat>74.6833</lat>
+    <lng>-94.9</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124028015</id>
+    <city>Quesnel</city>
+    <city_ascii>Quesnel</city_ascii>
+    <population>13788</population>
+    <region>British Columbia</region>
+    <lat>52.9837</lat>
+    <lng>-122.4833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124887306</id>
+    <city>Island Lake</city>
+    <city_ascii>Island Lake</city_ascii>
+    <population>10</population>
+    <region>Manitoba</region>
+    <lat>53.9666</lat>
+    <lng>-94.7666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124130981</id>
+    <city>Halifax</city>
+    <city_ascii>Halifax</city_ascii>
+    <population>359111</population>
+    <region>Nova Scotia</region>
+    <lat>44.65</lat>
+    <lng>-63.6</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124162676</id>
+    <city>Watson Lake</city>
+    <city_ascii>Watson Lake</city_ascii>
+    <population>802</population>
+    <region>Yukon</region>
+    <lat>60.1166</lat>
+    <lng>-128.8</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124205375</id>
+    <city>Sydney</city>
+    <city_ascii>Sydney</city_ascii>
+    <population>37538</population>
+    <region>Nova Scotia</region>
+    <lat>46.0661</lat>
+    <lng>-60.18</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124081402</id>
+    <city>Dawson Creek</city>
+    <city_ascii>Dawson Creek</city_ascii>
+    <population>10802</population>
+    <region>British Columbia</region>
+    <lat>55.767</lat>
+    <lng>-120.2333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124993293</id>
+    <city>Uranium City</city>
+    <city_ascii>Uranium City</city_ascii>
+    <population>89</population>
+    <region>Saskatchewan</region>
+    <lat>59.5666</lat>
+    <lng>-108.6166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124760634</id>
+    <city>Timmins</city>
+    <city_ascii>Timmins</city_ascii>
+    <population>34974</population>
+    <region>Ontario</region>
+    <lat>48.4666</lat>
+    <lng>-81.3333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124612546</id>
+    <city>Saskatoon</city>
+    <city_ascii>Saskatoon</city_ascii>
+    <population>198958</population>
+    <region>Saskatchewan</region>
+    <lat>52.17</lat>
+    <lng>-106.67</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124379539</id>
+    <city>Iqaluit</city>
+    <city_ascii>Iqaluit</city_ascii>
+    <population>6124</population>
+    <region>Nunavut</region>
+    <lat>63.7505</lat>
+    <lng>-68.5002</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124921853</id>
+    <city>Alert</city>
+    <city_ascii>Alert</city_ascii>
+    <population>125</population>
+    <region>Nunavut</region>
+    <lat>82.4833</lat>
+    <lng>-62.25</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124087342</id>
+    <city>Thessalon</city>
+    <city_ascii>Thessalon</city_ascii>
+    <population>1464</population>
+    <region>Ontario</region>
+    <lat>46.25</lat>
+    <lng>-83.55</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124208917</id>
+    <city>Yellowknife</city>
+    <city_ascii>Yellowknife</city_ascii>
+    <population>19234</population>
+    <region>Northwest Territories</region>
+    <lat>62.442</lat>
+    <lng>-114.397</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124351657</id>
+    <city>Camrose</city>
+    <city_ascii>Camrose</city_ascii>
+    <population>15808</population>
+    <region>Alberta</region>
+    <lat>53.0167</lat>
+    <lng>-112.8166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124851971</id>
+    <city>Campbell River</city>
+    <city_ascii>Campbell River</city_ascii>
+    <population>33430</population>
+    <region>British Columbia</region>
+    <lat>50.0171</lat>
+    <lng>-125.25</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124070926</id>
+    <city>Revelstoke</city>
+    <city_ascii>Revelstoke</city_ascii>
+    <population>7668</population>
+    <region>British Columbia</region>
+    <lat>51.0005</lat>
+    <lng>-118.1833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124434578</id>
+    <city>Meadow Lake</city>
+    <city_ascii>Meadow Lake</city_ascii>
+    <population>5882</population>
+    <region>Saskatchewan</region>
+    <lat>54.1301</lat>
+    <lng>-108.4347</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124868159</id>
+    <city>Atikokan</city>
+    <city_ascii>Atikokan</city_ascii>
+    <population>3625</population>
+    <region>Ontario</region>
+    <lat>48.7504</lat>
+    <lng>-91.6166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124204302</id>
+    <city>Creston</city>
+    <city_ascii>Creston</city_ascii>
+    <population>4816</population>
+    <region>British Columbia</region>
+    <lat>49.1</lat>
+    <lng>-116.5167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124560722</id>
+    <city>Gillam</city>
+    <city_ascii>Gillam</city_ascii>
+    <population>1281</population>
+    <region>Manitoba</region>
+    <lat>56.35</lat>
+    <lng>-94.7</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124937794</id>
+    <city>Cranbrook</city>
+    <city_ascii>Cranbrook</city_ascii>
+    <population>18610</population>
+    <region>British Columbia</region>
+    <lat>49.5167</lat>
+    <lng>-115.7667</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124386809</id>
+    <city>Little Current</city>
+    <city_ascii>Little Current</city_ascii>
+    <population>1595</population>
+    <region>Ontario</region>
+    <lat>45.967</lat>
+    <lng>-81.9333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124690423</id>
+    <city>Calgary</city>
+    <city_ascii>Calgary</city_ascii>
+    <population>1110000</population>
+    <region>Alberta</region>
+    <lat>51.083</lat>
+    <lng>-114.08</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124557709</id>
+    <city>Big Beaver House</city>
+    <city_ascii>Big Beaver House</city_ascii>
+    <population>10</population>
+    <region>Ontario</region>
+    <lat>52.95</lat>
+    <lng>-89.8833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124245809</id>
+    <city>Parry Sound</city>
+    <city_ascii>Parry Sound</city_ascii>
+    <population>7105</population>
+    <region>Ontario</region>
+    <lat>45.3337</lat>
+    <lng>-80.033</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124735582</id>
+    <city>Kamloops</city>
+    <city_ascii>Kamloops</city_ascii>
+    <population>68714</population>
+    <region>British Columbia</region>
+    <lat>50.6667</lat>
+    <lng>-120.3333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124037070</id>
+    <city>Dolbeau</city>
+    <city_ascii>Dolbeau</city_ascii>
+    <population>13337</population>
+    <region>Québec</region>
+    <lat>48.8666</lat>
+    <lng>-72.2333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124741456</id>
+    <city>St. John's</city>
+    <city_ascii>St. John's</city_ascii>
+    <population>131469</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>47.585</lat>
+    <lng>-52.681</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124130748</id>
+    <city>Lansdowne House</city>
+    <city_ascii>Lansdowne House</city_ascii>
+    <population>120</population>
+    <region>Ontario</region>
+    <lat>52.2166</lat>
+    <lng>-87.8833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124599203</id>
+    <city>Paulatuk</city>
+    <city_ascii>Paulatuk</city_ascii>
+    <population>294</population>
+    <region>Northwest Territories</region>
+    <lat>69.3833</lat>
+    <lng>-123.9833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124363788</id>
+    <city>Attawapiskat</city>
+    <city_ascii>Attawapiskat</city_ascii>
+    <population>1802</population>
+    <region>Ontario</region>
+    <lat>52.9166</lat>
+    <lng>-82.4333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124433645</id>
+    <city>Rimouski</city>
+    <city_ascii>Rimouski</city_ascii>
+    <population>35584</population>
+    <region>Québec</region>
+    <lat>48.4337</lat>
+    <lng>-68.5167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124505481</id>
+    <city>Grand Prairie</city>
+    <city_ascii>Grand Prairie</city_ascii>
+    <population>41462</population>
+    <region>Alberta</region>
+    <lat>55.1666</lat>
+    <lng>-118.8</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124902252</id>
+    <city>La Sarre</city>
+    <city_ascii>La Sarre</city_ascii>
+    <population>7206</population>
+    <region>Québec</region>
+    <lat>48.8</lat>
+    <lng>-79.2</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124305694</id>
+    <city>Mingan</city>
+    <city_ascii>Mingan</city_ascii>
+    <population>588</population>
+    <region>Québec</region>
+    <lat>50.3018</lat>
+    <lng>-64.0173</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124158154</id>
+    <city>Prince Albert</city>
+    <city_ascii>Prince Albert</city_ascii>
+    <population>34609</population>
+    <region>Saskatchewan</region>
+    <lat>53.2</lat>
+    <lng>-105.75</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124806868</id>
+    <city>Moose Jaw</city>
+    <city_ascii>Moose Jaw</city_ascii>
+    <population>32166</population>
+    <region>Saskatchewan</region>
+    <lat>50.4</lat>
+    <lng>-105.55</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124154376</id>
+    <city>Powell River</city>
+    <city_ascii>Powell River</city_ascii>
+    <population>12779</population>
+    <region>British Columbia</region>
+    <lat>49.8837</lat>
+    <lng>-124.55</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124731886</id>
+    <city>Pangnirtung</city>
+    <city_ascii>Pangnirtung</city_ascii>
+    <population>1320</population>
+    <region>Nunavut</region>
+    <lat>66.1333</lat>
+    <lng>-65.75</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124361295</id>
+    <city>Nelson</city>
+    <city_ascii>Nelson</city_ascii>
+    <population>11779</population>
+    <region>British Columbia</region>
+    <lat>49.4837</lat>
+    <lng>-117.2833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124941936</id>
+    <city>Peace River</city>
+    <city_ascii>Peace River</city_ascii>
+    <population>5340</population>
+    <region>Alberta</region>
+    <lat>56.2333</lat>
+    <lng>-117.2833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124248298</id>
+    <city>Cobalt</city>
+    <city_ascii>Cobalt</city_ascii>
+    <population>1372</population>
+    <region>Ontario</region>
+    <lat>47.3837</lat>
+    <lng>-79.6833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124760188</id>
+    <city>New Glasgow</city>
+    <city_ascii>New Glasgow</city_ascii>
+    <population>20322</population>
+    <region>Nova Scotia</region>
+    <lat>45.5833</lat>
+    <lng>-62.6333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124556203</id>
+    <city>Arctic Bay</city>
+    <city_ascii>Arctic Bay</city_ascii>
+    <population>604</population>
+    <region>Nunavut</region>
+    <lat>73.0333</lat>
+    <lng>-85.1666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124021816</id>
+    <city>Burwash Landing</city>
+    <city_ascii>Burwash Landing</city_ascii>
+    <population>73</population>
+    <region>Yukon</region>
+    <lat>61.3504</lat>
+    <lng>-139</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124154865</id>
+    <city>Saint-Georges</city>
+    <city_ascii>Saint-Georges</city_ascii>
+    <population>26149</population>
+    <region>Québec</region>
+    <lat>46.1171</lat>
+    <lng>-70.6667</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124825478</id>
+    <city>Vancouver</city>
+    <city_ascii>Vancouver</city_ascii>
+    <population>2313328</population>
+    <region>British Columbia</region>
+    <lat>49.2734</lat>
+    <lng>-123.1216</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124303972</id>
+    <city>Medicine Hat</city>
+    <city_ascii>Medicine Hat</city_ascii>
+    <population>63138</population>
+    <region>Alberta</region>
+    <lat>50.0333</lat>
+    <lng>-110.6833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124159024</id>
+    <city>Port Hope Simpson</city>
+    <city_ascii>Port Hope Simpson</city_ascii>
+    <population>197</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>52.5333</lat>
+    <lng>-56.3</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124841556</id>
+    <city>Deer Lake</city>
+    <city_ascii>Deer Lake</city_ascii>
+    <population>4163</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>49.1744</lat>
+    <lng>-57.4269</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124585613</id>
+    <city>Deer Lake</city>
+    <city_ascii>Deer Lake</city_ascii>
+    <population>3743</population>
+    <region>Ontario</region>
+    <lat>52.617</lat>
+    <lng>-94.0666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124534321</id>
+    <city>Vegreville</city>
+    <city_ascii>Vegreville</city_ascii>
+    <population>5813</population>
+    <region>Alberta</region>
+    <lat>53.5</lat>
+    <lng>-112.05</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124480592</id>
+    <city>Bella Bella</city>
+    <city_ascii>Bella Bella</city_ascii>
+    <population>1400</population>
+    <region>British Columbia</region>
+    <lat>52.1484</lat>
+    <lng>-128.1173</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124057160</id>
+    <city>Rankin Inlet</city>
+    <city_ascii>Rankin Inlet</city_ascii>
+    <population>2472</population>
+    <region>Nunavut</region>
+    <lat>62.8167</lat>
+    <lng>-92.0953</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124623613</id>
+    <city>Owen Sound</city>
+    <city_ascii>Owen Sound</city_ascii>
+    <population>22625</population>
+    <region>Ontario</region>
+    <lat>44.5666</lat>
+    <lng>-80.85</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124501918</id>
+    <city>Lac La Biche</city>
+    <city_ascii>Lac La Biche</city_ascii>
+    <population>2986</population>
+    <region>Alberta</region>
+    <lat>54.7719</lat>
+    <lng>-111.9647</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124338710</id>
+    <city>Hopedale</city>
+    <city_ascii>Hopedale</city_ascii>
+    <population>442</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>55.45</lat>
+    <lng>-60.2167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124567295</id>
+    <city>Norway House</city>
+    <city_ascii>Norway House</city_ascii>
+    <population>6000</population>
+    <region>Manitoba</region>
+    <lat>53.9666</lat>
+    <lng>-97.8333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124748087</id>
+    <city>Coral Harbour</city>
+    <city_ascii>Coral Harbour</city_ascii>
+    <population>834</population>
+    <region>Nunavut</region>
+    <lat>64.1538</lat>
+    <lng>-83.1766</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124349489</id>
+    <city>Kugluktuk</city>
+    <city_ascii>Kugluktuk</city_ascii>
+    <population>1302</population>
+    <region>Nunavut</region>
+    <lat>67.7987</lat>
+    <lng>-115.1254</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124868628</id>
+    <city>Norman Wells</city>
+    <city_ascii>Norman Wells</city_ascii>
+    <population>1027</population>
+    <region>Northwest Territories</region>
+    <lat>65.2837</lat>
+    <lng>-126.85</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124395645</id>
+    <city>Fort Resolution</city>
+    <city_ascii>Fort Resolution</city_ascii>
+    <population>448</population>
+    <region>Northwest Territories</region>
+    <lat>61.1666</lat>
+    <lng>-113.683</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124984904</id>
+    <city>Fort McPherson</city>
+    <city_ascii>Fort McPherson</city_ascii>
+    <population>1069</population>
+    <region>Northwest Territories</region>
+    <lat>67.4915</lat>
+    <lng>-134.895</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124235945</id>
+    <city>Forteau</city>
+    <city_ascii>Forteau</city_ascii>
+    <population>448</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>51.4504</lat>
+    <lng>-56.95</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124705411</id>
+    <city>Kuujjuaq</city>
+    <city_ascii>Kuujjuaq</city_ascii>
+    <population>1273</population>
+    <region>Québec</region>
+    <lat>58.1</lat>
+    <lng>-68.4</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124646146</id>
+    <city>Cape Dorset</city>
+    <city_ascii>Cape Dorset</city_ascii>
+    <population>1326</population>
+    <region>Nunavut</region>
+    <lat>64.3125</lat>
+    <lng>-76.5386</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124810278</id>
+    <city>Cartwright</city>
+    <city_ascii>Cartwright</city_ascii>
+    <population>505</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>53.7014</lat>
+    <lng>-57.0121</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124500458</id>
+    <city>Flin Flon</city>
+    <city_ascii>Flin Flon</city_ascii>
+    <population>6393</population>
+    <region>Manitoba</region>
+    <lat>54.7666</lat>
+    <lng>-101.8833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124762461</id>
+    <city>Holman</city>
+    <city_ascii>Holman</city_ascii>
+    <population>500</population>
+    <region>Northwest Territories</region>
+    <lat>70.7334</lat>
+    <lng>-117.75</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124877940</id>
+    <city>Pembroke</city>
+    <city_ascii>Pembroke</city_ascii>
+    <population>15551</population>
+    <region>Ontario</region>
+    <lat>45.8503</lat>
+    <lng>-77.1166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124826935</id>
+    <city>Baker Lake</city>
+    <city_ascii>Baker Lake</city_ascii>
+    <population>1584</population>
+    <region>Nunavut</region>
+    <lat>64.317</lat>
+    <lng>-96.0167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124592907</id>
+    <city>Moosonee</city>
+    <city_ascii>Moosonee</city_ascii>
+    <population>1725</population>
+    <region>Ontario</region>
+    <lat>51.2806</lat>
+    <lng>-80.658</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124295097</id>
+    <city>Dryden</city>
+    <city_ascii>Dryden</city_ascii>
+    <population>7862</population>
+    <region>Ontario</region>
+    <lat>49.7833</lat>
+    <lng>-92.8333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124244792</id>
+    <city>Corner Brook</city>
+    <city_ascii>Corner Brook</city_ascii>
+    <population>20791</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>48.95</lat>
+    <lng>-57.9333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124080626</id>
+    <city>Kelowna</city>
+    <city_ascii>Kelowna</city_ascii>
+    <population>125109</population>
+    <region>British Columbia</region>
+    <lat>49.9</lat>
+    <lng>-119.4833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124491408</id>
+    <city>Fort Smith</city>
+    <city_ascii>Fort Smith</city_ascii>
+    <population>518</population>
+    <region>Northwest Territories</region>
+    <lat>60</lat>
+    <lng>-111.8833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124513059</id>
+    <city>Fort Severn</city>
+    <city_ascii>Fort Severn</city_ascii>
+    <population>125</population>
+    <region>Ontario</region>
+    <lat>55.9833</lat>
+    <lng>-87.65</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124355399</id>
+    <city>Mont-Laurier</city>
+    <city_ascii>Mont-Laurier</city_ascii>
+    <population>11642</population>
+    <region>Québec</region>
+    <lat>46.5504</lat>
+    <lng>-75.5</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124993496</id>
+    <city>Channel-Port aux Basques</city>
+    <city_ascii>Channel-Port aux Basques</city_ascii>
+    <population>4220</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>47.567</lat>
+    <lng>-59.15</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124343190</id>
+    <city>Kindersley</city>
+    <city_ascii>Kindersley</city_ascii>
+    <population>4383</population>
+    <region>Saskatchewan</region>
+    <lat>51.467</lat>
+    <lng>-109.1333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124253277</id>
+    <city>Igloolik</city>
+    <city_ascii>Igloolik</city_ascii>
+    <population>1612</population>
+    <region>Nunavut</region>
+    <lat>69.2565</lat>
+    <lng>-81.7936</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124151446</id>
+    <city>Hudson Bay</city>
+    <city_ascii>Hudson Bay</city_ascii>
+    <population>2157</population>
+    <region>Saskatchewan</region>
+    <lat>52.8504</lat>
+    <lng>-102.3833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124324905</id>
+    <city>Courtenay</city>
+    <city_ascii>Courtenay</city_ascii>
+    <population>32793</population>
+    <region>British Columbia</region>
+    <lat>49.6833</lat>
+    <lng>-125</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124591114</id>
+    <city>Mistassini</city>
+    <city_ascii>Mistassini</city_ascii>
+    <population>2645</population>
+    <region>Québec</region>
+    <lat>50.4171</lat>
+    <lng>-73.8666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124437097</id>
+    <city>Kingston</city>
+    <city_ascii>Kingston</city_ascii>
+    <population>114195</population>
+    <region>Ontario</region>
+    <lat>44.2337</lat>
+    <lng>-76.4833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124594875</id>
+    <city>Eastmain</city>
+    <city_ascii>Eastmain</city_ascii>
+    <population>335</population>
+    <region>Québec</region>
+    <lat>52.2333</lat>
+    <lng>-78.5167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124859576</id>
+    <city>Baie-Comeau</city>
+    <city_ascii>Baie-Comeau</city_ascii>
+    <population>10435</population>
+    <region>Québec</region>
+    <lat>49.2227</lat>
+    <lng>-68.158</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124058496</id>
+    <city>North Bay</city>
+    <city_ascii>North Bay</city_ascii>
+    <population>50170</population>
+    <region>Ontario</region>
+    <lat>46.3</lat>
+    <lng>-79.45</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124789635</id>
+    <city>North Battleford</city>
+    <city_ascii>North Battleford</city_ascii>
+    <population>19440</population>
+    <region>Saskatchewan</region>
+    <lat>52.7666</lat>
+    <lng>-108.2833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124072601</id>
+    <city>Grise Fiord</city>
+    <city_ascii>Grise Fiord</city_ascii>
+    <population>23</population>
+    <region>Nunavut</region>
+    <lat>76.4417</lat>
+    <lng>-82.95</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124721803</id>
+    <city>Hay River</city>
+    <city_ascii>Hay River</city_ascii>
+    <population>3900</population>
+    <region>Northwest Territories</region>
+    <lat>60.85</lat>
+    <lng>-115.7</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124279421</id>
+    <city>Stony Rapids</city>
+    <city_ascii>Stony Rapids</city_ascii>
+    <population>152</population>
+    <region>Saskatchewan</region>
+    <lat>59.2666</lat>
+    <lng>-105.8333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124131074</id>
+    <city>Hinton</city>
+    <city_ascii>Hinton</city_ascii>
+    <population>10265</population>
+    <region>Alberta</region>
+    <lat>53.4</lat>
+    <lng>-117.5834</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124279679</id>
+    <city>Toronto</city>
+    <city_ascii>Toronto</city_ascii>
+    <population>5213000</population>
+    <region>Ontario</region>
+    <lat>43.7</lat>
+    <lng>-79.42</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124290735</id>
+    <city>Edmonton</city>
+    <city_ascii>Edmonton</city_ascii>
+    <population>1058000</population>
+    <region>Alberta</region>
+    <lat>53.55</lat>
+    <lng>-113.5</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124942230</id>
+    <city>Gjoa Haven</city>
+    <city_ascii>Gjoa Haven</city_ascii>
+    <population>1109</population>
+    <region>Nunavut</region>
+    <lat>68.6333</lat>
+    <lng>-95.9167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124669512</id>
+    <city>Fort Simpson</city>
+    <city_ascii>Fort Simpson</city_ascii>
+    <population>283</population>
+    <region>Northwest Territories</region>
+    <lat>61.85</lat>
+    <lng>-121.3333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124398936</id>
+    <city>Naujaat</city>
+    <city_ascii>Repulse Bay</city_ascii>
+    <population>1000</population>
+    <region>Nunavut</region>
+    <lat>66.5295</lat>
+    <lng>-86.2829</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124321200</id>
+    <city>Lethbridge</city>
+    <city_ascii>Lethbridge</city_ascii>
+    <population>70617</population>
+    <region>Alberta</region>
+    <lat>49.7005</lat>
+    <lng>-112.8333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124539524</id>
+    <city>Sudbury</city>
+    <city_ascii>Sudbury</city_ascii>
+    <population>157857</population>
+    <region>Ontario</region>
+    <lat>46.5</lat>
+    <lng>-80.9666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124460875</id>
+    <city>Swift Current</city>
+    <city_ascii>Swift Current</city_ascii>
+    <population>14906</population>
+    <region>Saskatchewan</region>
+    <lat>50.2837</lat>
+    <lng>-107.7666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124342541</id>
+    <city>Regina</city>
+    <city_ascii>Regina</city_ascii>
+    <population>176183</population>
+    <region>Saskatchewan</region>
+    <lat>50.45</lat>
+    <lng>-104.617</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124938303</id>
+    <city>Cornwall</city>
+    <city_ascii>Cornwall</city_ascii>
+    <population>48821</population>
+    <region>Ontario</region>
+    <lat>45.0171</lat>
+    <lng>-74.7333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124099415</id>
+    <city>Taloyoak</city>
+    <city_ascii>Taloyoak</city_ascii>
+    <population>774</population>
+    <region>Nunavut</region>
+    <lat>69.5333</lat>
+    <lng>-93.5333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124437778</id>
+    <city>Tuktoyaktuk</city>
+    <city_ascii>Tuktoyaktuk</city_ascii>
+    <population>929</population>
+    <region>Northwest Territories</region>
+    <lat>69.4548</lat>
+    <lng>-133.0492</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124469960</id>
+    <city>London</city>
+    <city_ascii>London</city_ascii>
+    <population>346765</population>
+    <region>Ontario</region>
+    <lat>42.97</lat>
+    <lng>-81.25</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124631749</id>
+    <city>Natashquan</city>
+    <city_ascii>Natashquan</city_ascii>
+    <population>722</population>
+    <region>Québec</region>
+    <lat>50.1913</lat>
+    <lng>-61.8107</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124662875</id>
+    <city>Cap-Chat</city>
+    <city_ascii>Cap-Chat</city_ascii>
+    <population>1484</population>
+    <region>Québec</region>
+    <lat>49.1</lat>
+    <lng>-66.6833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124049830</id>
+    <city>Orillia</city>
+    <city_ascii>Orillia</city_ascii>
+    <population>37483</population>
+    <region>Ontario</region>
+    <lat>44.6</lat>
+    <lng>-79.4167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124844807</id>
+    <city>Kenora</city>
+    <city_ascii>Kenora</city_ascii>
+    <population>10852</population>
+    <region>Ontario</region>
+    <lat>49.7667</lat>
+    <lng>-94.4666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124340223</id>
+    <city>Barrie</city>
+    <city_ascii>Barrie</city_ascii>
+    <population>182041</population>
+    <region>Ontario</region>
+    <lat>44.3838</lat>
+    <lng>-79.7</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124559506</id>
+    <city>Sherbrooke</city>
+    <city_ascii>Sherbrooke</city_ascii>
+    <population>139652</population>
+    <region>Québec</region>
+    <lat>45.4</lat>
+    <lng>-71.9</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124808047</id>
+    <city>St. Anthony</city>
+    <city_ascii>St. Anthony</city_ascii>
+    <population>224</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>51.3837</lat>
+    <lng>-55.6</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124015130</id>
+    <city>Rigolet</city>
+    <city_ascii>Rigolet</city_ascii>
+    <population>124</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>54.1766</lat>
+    <lng>-58.4473</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124011380</id>
+    <city>Fort Good Hope</city>
+    <city_ascii>Fort Good Hope</city_ascii>
+    <population>597</population>
+    <region>Northwest Territories</region>
+    <lat>66.2666</lat>
+    <lng>-128.6333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124371570</id>
+    <city>La Scie</city>
+    <city_ascii>La Scie</city_ascii>
+    <population>817</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>49.967</lat>
+    <lng>-55.583</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124517495</id>
+    <city>Fort St. John</city>
+    <city_ascii>Fort St. John</city_ascii>
+    <population>18776</population>
+    <region>British Columbia</region>
+    <lat>56.25</lat>
+    <lng>-120.8333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124974800</id>
+    <city>Marathon</city>
+    <city_ascii>Marathon</city_ascii>
+    <population>4627</population>
+    <region>Ontario</region>
+    <lat>48.7504</lat>
+    <lng>-86.3667</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124212754</id>
+    <city>Gaspé</city>
+    <city_ascii>Gaspe</city_ascii>
+    <population>3677</population>
+    <region>Québec</region>
+    <lat>48.8373</lat>
+    <lng>-64.4934</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124119363</id>
+    <city>Nelson House</city>
+    <city_ascii>Nelson House</city_ascii>
+    <population>2500</population>
+    <region>Manitoba</region>
+    <lat>55.8005</lat>
+    <lng>-98.85</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124632130</id>
+    <city>Lillooet</city>
+    <city_ascii>Lillooet</city_ascii>
+    <population>2893</population>
+    <region>British Columbia</region>
+    <lat>50.6837</lat>
+    <lng>-121.9333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124169385</id>
+    <city>Fort McMurray</city>
+    <city_ascii>Fort McMurray</city_ascii>
+    <population>21863</population>
+    <region>Alberta</region>
+    <lat>56.7333</lat>
+    <lng>-111.3833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124533812</id>
+    <city>Jasper</city>
+    <city_ascii>Jasper</city_ascii>
+    <population>3907</population>
+    <region>Alberta</region>
+    <lat>52.8833</lat>
+    <lng>-118.0834</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124564223</id>
+    <city>Buchans</city>
+    <city_ascii>Buchans</city_ascii>
+    <population>685</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>48.817</lat>
+    <lng>-56.8666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124010388</id>
+    <city>Stettler</city>
+    <city_ascii>Stettler</city_ascii>
+    <population>5494</population>
+    <region>Alberta</region>
+    <lat>52.333</lat>
+    <lng>-112.6833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124763455</id>
+    <city>La Ronge</city>
+    <city_ascii>La Ronge</city_ascii>
+    <population>3783</population>
+    <region>Saskatchewan</region>
+    <lat>55.1</lat>
+    <lng>-105.3</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124164486</id>
+    <city>Brochet</city>
+    <city_ascii>Brochet</city_ascii>
+    <population>278</population>
+    <region>Manitoba</region>
+    <lat>57.8832</lat>
+    <lng>-101.6666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124594988</id>
+    <city>Baddeck</city>
+    <city_ascii>Baddeck</city_ascii>
+    <population>852</population>
+    <region>Nova Scotia</region>
+    <lat>46.1</lat>
+    <lng>-60.754</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124788973</id>
+    <city>Pond Inlet</city>
+    <city_ascii>Pond Inlet</city_ascii>
+    <population>1549</population>
+    <region>Nunavut</region>
+    <lat>72.685</lat>
+    <lng>-78.0001</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124425707</id>
+    <city>St-Augustin</city>
+    <city_ascii>St-Augustin</city_ascii>
+    <population>3961</population>
+    <region>Québec</region>
+    <lat>51.2423</lat>
+    <lng>-58.647</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124472413</id>
+    <city>Gimli</city>
+    <city_ascii>Gimli</city_ascii>
+    <population>2623</population>
+    <region>Manitoba</region>
+    <lat>50.6333</lat>
+    <lng>-97</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124856215</id>
+    <city>Red Lake</city>
+    <city_ascii>Red Lake</city_ascii>
+    <population>1765</population>
+    <region>Ontario</region>
+    <lat>51.0337</lat>
+    <lng>-93.8333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124000201</id>
+    <city>Stephenville</city>
+    <city_ascii>Stephenville</city_ascii>
+    <population>7054</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>48.5504</lat>
+    <lng>-58.5666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124019423</id>
+    <city>Ennadai</city>
+    <city_ascii>Ennadai</city_ascii>
+    <population>0</population>
+    <region>Nunavut</region>
+    <lat>61.1333</lat>
+    <lng>-100.8833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124879731</id>
+    <city>Happy Valley - Goose Bay</city>
+    <city_ascii>Happy Valley - Goose Bay</city_ascii>
+    <population>7572</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>53.3</lat>
+    <lng>-60.3</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124821980</id>
+    <city>Williams Lake</city>
+    <city_ascii>Williams Lake</city_ascii>
+    <population>14168</population>
+    <region>British Columbia</region>
+    <lat>52.1166</lat>
+    <lng>-122.15</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124847707</id>
+    <city>Prince Rupert</city>
+    <city_ascii>Prince Rupert</city_ascii>
+    <population>14708</population>
+    <region>British Columbia</region>
+    <lat>54.3167</lat>
+    <lng>-130.33</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124531262</id>
+    <city>Chilliwack</city>
+    <city_ascii>Chilliwack</city_ascii>
+    <population>51942</population>
+    <region>British Columbia</region>
+    <lat>49.1666</lat>
+    <lng>-121.95</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124508471</id>
+    <city>Radisson</city>
+    <city_ascii>Radisson</city_ascii>
+    <population>270</population>
+    <region>Québec</region>
+    <lat>53.7836</lat>
+    <lng>-77.6166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124676851</id>
+    <city>Churchill</city>
+    <city_ascii>Churchill</city_ascii>
+    <population>1000</population>
+    <region>Manitoba</region>
+    <lat>58.766</lat>
+    <lng>-94.166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124937351</id>
+    <city>Port Hardy</city>
+    <city_ascii>Port Hardy</city_ascii>
+    <population>2295</population>
+    <region>British Columbia</region>
+    <lat>50.7171</lat>
+    <lng>-127.5</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124613898</id>
+    <city>Penticton</city>
+    <city_ascii>Penticton</city_ascii>
+    <population>37721</population>
+    <region>British Columbia</region>
+    <lat>49.5004</lat>
+    <lng>-119.5833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124624283</id>
+    <city>Drummondville</city>
+    <city_ascii>Drummondville</city_ascii>
+    <population>59489</population>
+    <region>Québec</region>
+    <lat>45.8833</lat>
+    <lng>-72.4834</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124239939</id>
+    <city>Brandon</city>
+    <city_ascii>Brandon</city_ascii>
+    <population>28418</population>
+    <region>Manitoba</region>
+    <lat>49.8333</lat>
+    <lng>-99.95</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124242107</id>
+    <city>Argentia</city>
+    <city_ascii>Argentia</city_ascii>
+    <population>1063</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>47.3004</lat>
+    <lng>-53.99</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124651529</id>
+    <city>Kimmirut</city>
+    <city_ascii>Kimmirut</city_ascii>
+    <population>385</population>
+    <region>Nunavut</region>
+    <lat>62.85</lat>
+    <lng>-69.8833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124916771</id>
+    <city>Wiarton</city>
+    <city_ascii>Wiarton</city_ascii>
+    <population>2182</population>
+    <region>Ontario</region>
+    <lat>44.7337</lat>
+    <lng>-81.1333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124399363</id>
+    <city>Ottawa</city>
+    <city_ascii>Ottawa</city_ascii>
+    <population>1145000</population>
+    <region>Ontario</region>
+    <lat>45.4167</lat>
+    <lng>-75.7</lng>
+    <capital>national</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124526582</id>
+    <city>Fort Chipewyan</city>
+    <city_ascii>Fort Chipewyan</city_ascii>
+    <population>3222</population>
+    <region>Alberta</region>
+    <lat>58.7171</lat>
+    <lng>-111.15</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124378059</id>
+    <city>Fort Nelson</city>
+    <city_ascii>Fort Nelson</city_ascii>
+    <population>6315</population>
+    <region>British Columbia</region>
+    <lat>58.8167</lat>
+    <lng>-122.533</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124617750</id>
+    <city>Lynn Lake</city>
+    <city_ascii>Lynn Lake</city_ascii>
+    <population>482</population>
+    <region>Manitoba</region>
+    <lat>56.85</lat>
+    <lng>-101.05</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124618383</id>
+    <city>Weyburn</city>
+    <city_ascii>Weyburn</city_ascii>
+    <population>9362</population>
+    <region>Saskatchewan</region>
+    <lat>49.6666</lat>
+    <lng>-103.85</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124512812</id>
+    <city>Burns Lake</city>
+    <city_ascii>Burns Lake</city_ascii>
+    <population>2635</population>
+    <region>British Columbia</region>
+    <lat>54.217</lat>
+    <lng>-125.7666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124719084</id>
+    <city>Nain</city>
+    <city_ascii>Nain</city_ascii>
+    <population>1151</population>
+    <region>Newfoundland and Labrador</region>
+    <lat>56.5474</lat>
+    <lng>-61.686</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124733292</id>
+    <city>Prince George</city>
+    <city_ascii>Prince George</city_ascii>
+    <population>65558</population>
+    <region>British Columbia</region>
+    <lat>53.9167</lat>
+    <lng>-122.7667</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124296729</id>
+    <city>Cochrane</city>
+    <city_ascii>Cochrane</city_ascii>
+    <population>4441</population>
+    <region>Ontario</region>
+    <lat>49.067</lat>
+    <lng>-81.0166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124361489</id>
+    <city>Nipigon</city>
+    <city_ascii>Nipigon</city_ascii>
+    <population>1204</population>
+    <region>Ontario</region>
+    <lat>49.017</lat>
+    <lng>-88.25</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124662123</id>
+    <city>Rivière-du-Loup</city>
+    <city_ascii>Riviere-du-Loup</city_ascii>
+    <population>16403</population>
+    <region>Québec</region>
+    <lat>47.8333</lat>
+    <lng>-69.5333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124268324</id>
+    <city>St.-Jerome</city>
+    <city_ascii>St.-Jerome</city_ascii>
+    <population>78439</population>
+    <region>Québec</region>
+    <lat>45.7666</lat>
+    <lng>-74</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124836221</id>
+    <city>Geraldton</city>
+    <city_ascii>Geraldton</city_ascii>
+    <population>1290</population>
+    <region>Ontario</region>
+    <lat>49.7166</lat>
+    <lng>-86.9666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124394858</id>
+    <city>New Liskeard</city>
+    <city_ascii>New Liskeard</city_ascii>
+    <population>5203</population>
+    <region>Ontario</region>
+    <lat>47.5</lat>
+    <lng>-79.6666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124908580</id>
+    <city>Cat Lake</city>
+    <city_ascii>Cat Lake</city_ascii>
+    <population>277</population>
+    <region>Ontario</region>
+    <lat>51.717</lat>
+    <lng>-91.8</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124140302</id>
+    <city>Tofino</city>
+    <city_ascii>Tofino</city_ascii>
+    <population>1655</population>
+    <region>British Columbia</region>
+    <lat>49.1521</lat>
+    <lng>-125.9031</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124282127</id>
+    <city>Tsiigehtchic</city>
+    <city_ascii>Tsiigehtchic</city_ascii>
+    <population>175</population>
+    <region>Northwest Territories</region>
+    <lat>67.4333</lat>
+    <lng>-133.75</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124110693</id>
+    <city>Thompson</city>
+    <city_ascii>Thompson</city_ascii>
+    <population>13727</population>
+    <region>Manitoba</region>
+    <lat>55.7499</lat>
+    <lng>-97.8666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124808029</id>
+    <city>Abbotsford</city>
+    <city_ascii>Abbotsford</city_ascii>
+    <population>151683</population>
+    <region>British Columbia</region>
+    <lat>49.0504</lat>
+    <lng>-122.3</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124407487</id>
+    <city>Trois-Rivières</city>
+    <city_ascii>Trois Rivieres</city_ascii>
+    <population>119693</population>
+    <region>Québec</region>
+    <lat>46.35</lat>
+    <lng>-72.5499</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124440356</id>
+    <city>Peterborough</city>
+    <city_ascii>Peterborough</city_ascii>
+    <population>83627</population>
+    <region>Ontario</region>
+    <lat>44.3</lat>
+    <lng>-78.3333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124939649</id>
+    <city>Amos</city>
+    <city_ascii>Amos</city_ascii>
+    <population>10516</population>
+    <region>Québec</region>
+    <lat>48.5666</lat>
+    <lng>-78.1167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124518288</id>
+    <city>Chapleau</city>
+    <city_ascii>Chapleau</city_ascii>
+    <population>2663</population>
+    <region>Ontario</region>
+    <lat>47.8337</lat>
+    <lng>-83.4</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124006333</id>
+    <city>Athabasca</city>
+    <city_ascii>Athabasca</city_ascii>
+    <population>2539</population>
+    <region>Alberta</region>
+    <lat>54.717</lat>
+    <lng>-113.2666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124404130</id>
+    <city>Red Deer</city>
+    <city_ascii>Red Deer</city_ascii>
+    <population>74857</population>
+    <region>Alberta</region>
+    <lat>52.2666</lat>
+    <lng>-113.8</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124786959</id>
+    <city>Belleville</city>
+    <city_ascii>Belleville</city_ascii>
+    <population>43990</population>
+    <region>Ontario</region>
+    <lat>44.1667</lat>
+    <lng>-77.3833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124764245</id>
+    <city>Kapuskasing</city>
+    <city_ascii>Kapuskasing</city_ascii>
+    <population>9240</population>
+    <region>Ontario</region>
+    <lat>49.4167</lat>
+    <lng>-82.4333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124804545</id>
+    <city>Sioux Lookout</city>
+    <city_ascii>Sioux Lookout</city_ascii>
+    <population>4570</population>
+    <region>Ontario</region>
+    <lat>50.263</lat>
+    <lng>-91.9166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124224963</id>
+    <city>Winnipeg</city>
+    <city_ascii>Winnipeg</city_ascii>
+    <population>632063</population>
+    <region>Manitoba</region>
+    <lat>49.883</lat>
+    <lng>-97.166</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124619845</id>
+    <city>Lake Louise</city>
+    <city_ascii>Lake Louise</city_ascii>
+    <population>1248</population>
+    <region>Alberta</region>
+    <lat>51.4337</lat>
+    <lng>-116.1833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124351648</id>
+    <city>Banff</city>
+    <city_ascii>Banff</city_ascii>
+    <population>7502</population>
+    <region>Alberta</region>
+    <lat>51.178</lat>
+    <lng>-115.5719</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124071207</id>
+    <city>Doline</city>
+    <city_ascii>Doline</city_ascii>
+    <population>525</population>
+    <region>Northwest Territories</region>
+    <lat>65.1833</lat>
+    <lng>-123.4167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124596377</id>
+    <city>Cambridge Bay</city>
+    <city_ascii>Cambridge Bay</city_ascii>
+    <population>1477</population>
+    <region>Nunavut</region>
+    <lat>69.117</lat>
+    <lng>-105.0333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124897904</id>
+    <city>Biggar</city>
+    <city_ascii>Biggar</city_ascii>
+    <population>2192</population>
+    <region>Saskatchewan</region>
+    <lat>52.0504</lat>
+    <lng>-107.9833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124623893</id>
+    <city>Nanaimo</city>
+    <city_ascii>Nanaimo</city_ascii>
+    <population>84905</population>
+    <region>British Columbia</region>
+    <lat>49.146</lat>
+    <lng>-123.9343</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124239138</id>
+    <city>Val d'Or</city>
+    <city_ascii>Val d'Or</city_ascii>
+    <population>20625</population>
+    <region>Québec</region>
+    <lat>48.1166</lat>
+    <lng>-77.7666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124072220</id>
+    <city>Hall Beach</city>
+    <city_ascii>Hall Beach</city_ascii>
+    <population>654</population>
+    <region>Nunavut</region>
+    <lat>68.7675</lat>
+    <lng>-81.2361</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124490415</id>
+    <city>Oxford House</city>
+    <city_ascii>Oxford House</city_ascii>
+    <population>184</population>
+    <region>Manitoba</region>
+    <lat>54.9504</lat>
+    <lng>-95.2666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124755168</id>
+    <city>The Pas</city>
+    <city_ascii>The Pas</city_ascii>
+    <population>6055</population>
+    <region>Manitoba</region>
+    <lat>53.8166</lat>
+    <lng>-101.2333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124688170</id>
+    <city>Meander River</city>
+    <city_ascii>Meander River</city_ascii>
+    <population>200</population>
+    <region>Alberta</region>
+    <lat>59.0333</lat>
+    <lng>-117.683</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124816720</id>
+    <city>Bathurst</city>
+    <city_ascii>Bathurst</city_ascii>
+    <population>6111</population>
+    <region>New Brunswick</region>
+    <lat>47.6</lat>
+    <lng>-65.65</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124800737</id>
+    <city>Windsor</city>
+    <city_ascii>Windsor</city_ascii>
+    <population>3864</population>
+    <region>Nova Scotia</region>
+    <lat>44.9806</lat>
+    <lng>-64.1291</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124261024</id>
+    <city>Windsor</city>
+    <city_ascii>Windsor</city_ascii>
+    <population>319246</population>
+    <region>Ontario</region>
+    <lat>42.3333</lat>
+    <lng>-83.0333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124149787</id>
+    <city>Victoriaville</city>
+    <city_ascii>Victoriaville</city_ascii>
+    <population>41500</population>
+    <region>Québec</region>
+    <lat>46.0504</lat>
+    <lng>-71.9667</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124286131</id>
+    <city>Brockville</city>
+    <city_ascii>Brockville</city_ascii>
+    <population>26458</population>
+    <region>Ontario</region>
+    <lat>44.5893</lat>
+    <lng>-75.6953</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124567288</id>
+    <city>Hamilton</city>
+    <city_ascii>Hamilton</city_ascii>
+    <population>721053</population>
+    <region>Ontario</region>
+    <lat>43.25</lat>
+    <lng>-79.83</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124158530</id>
+    <city>Kitchener</city>
+    <city_ascii>Kitchener</city_ascii>
+    <population>417001</population>
+    <region>Ontario</region>
+    <lat>43.45</lat>
+    <lng>-80.5</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124147219</id>
+    <city>Victoria</city>
+    <city_ascii>Victoria</city_ascii>
+    <population>289625</population>
+    <region>British Columbia</region>
+    <lat>48.4333</lat>
+    <lng>-123.35</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124566061</id>
+    <city>Orangeville</city>
+    <city_ascii>Orangeville</city_ascii>
+    <population>32640</population>
+    <region>Ontario</region>
+    <lat>43.9171</lat>
+    <lng>-80.0833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124264846</id>
+    <city>Sandspit</city>
+    <city_ascii>Sandspit</city_ascii>
+    <population>538</population>
+    <region>British Columbia</region>
+    <lat>53.2404</lat>
+    <lng>-131.8333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124381797</id>
+    <city>Wawa</city>
+    <city_ascii>Wawa</city_ascii>
+    <population>2174</population>
+    <region>Ontario</region>
+    <lat>48.0004</lat>
+    <lng>-84.7833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124276361</id>
+    <city>Kangirsuk</city>
+    <city_ascii>Kangirsuk</city_ascii>
+    <population>549</population>
+    <region>Québec</region>
+    <lat>60.0248</lat>
+    <lng>-69.9991</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124441118</id>
+    <city>Shawinigan</city>
+    <city_ascii>Shawinigan</city_ascii>
+    <population>49161</population>
+    <region>Québec</region>
+    <lat>46.5504</lat>
+    <lng>-72.7333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124376843</id>
+    <city>Hearst</city>
+    <city_ascii>Hearst</city_ascii>
+    <population>5043</population>
+    <region>Ontario</region>
+    <lat>49.7005</lat>
+    <lng>-83.6666</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124927414</id>
+    <city>Pukatawagan</city>
+    <city_ascii>Pukatawagan</city_ascii>
+    <population>431</population>
+    <region>Manitoba</region>
+    <lat>55.7333</lat>
+    <lng>-101.3166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124309634</id>
+    <city>Arviat</city>
+    <city_ascii>Arviat</city_ascii>
+    <population>1868</population>
+    <region>Nunavut</region>
+    <lat>61.1086</lat>
+    <lng>-94.0586</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124686252</id>
+    <city>Matagami</city>
+    <city_ascii>Matagami</city_ascii>
+    <population>1966</population>
+    <region>Québec</region>
+    <lat>49.7504</lat>
+    <lng>-77.6333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124631364</id>
+    <city>Saint John</city>
+    <city_ascii>Saint John</city_ascii>
+    <population>87857</population>
+    <region>New Brunswick</region>
+    <lat>45.267</lat>
+    <lng>-66.0767</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124116419</id>
+    <city>Inuvik</city>
+    <city_ascii>Inuvik</city_ascii>
+    <population>3022</population>
+    <region>Northwest Territories</region>
+    <lat>68.35</lat>
+    <lng>-133.7</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124208484</id>
+    <city>Chesterfield Inlet</city>
+    <city_ascii>Chesterfield Inlet</city_ascii>
+    <population>374</population>
+    <region>Nunavut</region>
+    <lat>63.3383</lat>
+    <lng>-90.7001</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124267752</id>
+    <city>Rouyn-Noranda</city>
+    <city_ascii>Rouyn-Noranda</city_ascii>
+    <population>24602</population>
+    <region>Québec</region>
+    <lat>48.25</lat>
+    <lng>-79.0332</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124159558</id>
+    <city>Liverpool</city>
+    <city_ascii>Liverpool</city_ascii>
+    <population>4331</population>
+    <region>Nova Scotia</region>
+    <lat>44.04</lat>
+    <lng>-64.72</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124586170</id>
+    <city>Montréal</city>
+    <city_ascii>Montreal</city_ascii>
+    <population>3678000</population>
+    <region>Québec</region>
+    <lat>45.5</lat>
+    <lng>-73.5833</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124659892</id>
+    <city>Shelburne</city>
+    <city_ascii>Shelburne</city_ascii>
+    <population>3167</population>
+    <region>Nova Scotia</region>
+    <lat>43.7656</lat>
+    <lng>-65.3194</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124983867</id>
+    <city>Yarmouth</city>
+    <city_ascii>Yarmouth</city_ascii>
+    <population>7500</population>
+    <region>Nova Scotia</region>
+    <lat>43.8308</lat>
+    <lng>-66.1126</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124962070</id>
+    <city>Salluit</city>
+    <city_ascii>Salluit</city_ascii>
+    <population>106</population>
+    <region>Québec</region>
+    <lat>62.1826</lat>
+    <lng>-75.6595</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124828045</id>
+    <city>Ivugivik</city>
+    <city_ascii>Ivugivik</city_ascii>
+    <population>156</population>
+    <region>Québec</region>
+    <lat>62.4166</lat>
+    <lng>-77.9</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124823933</id>
+    <city>Québec</city>
+    <city_ascii>Quebec</city_ascii>
+    <population>624177</population>
+    <region>Québec</region>
+    <lat>46.84</lat>
+    <lng>-71.2456</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124075766</id>
+    <city>Dawson City</city>
+    <city_ascii>Dawson City</city_ascii>
+    <population>1319</population>
+    <region>Yukon</region>
+    <lat>64.0666</lat>
+    <lng>-139.4167</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124521303</id>
+    <city>Moncton</city>
+    <city_ascii>Moncton</city_ascii>
+    <population>90635</population>
+    <region>New Brunswick</region>
+    <lat>46.0833</lat>
+    <lng>-64.7667</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124797865</id>
+    <city>Digby</city>
+    <city_ascii>Digby</city_ascii>
+    <population>3949</population>
+    <region>Nova Scotia</region>
+    <lat>44.6226</lat>
+    <lng>-65.7605</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124061289</id>
+    <city>Fredericton</city>
+    <city_ascii>Fredericton</city_ascii>
+    <population>52337</population>
+    <region>New Brunswick</region>
+    <lat>45.95</lat>
+    <lng>-66.6333</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124864417</id>
+    <city>Dease Lake</city>
+    <city_ascii>Dease Lake</city_ascii>
+    <population>303</population>
+    <region>British Columbia</region>
+    <lat>58.4503</lat>
+    <lng>-130.0333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124897699</id>
+    <city>Charlottetown</city>
+    <city_ascii>Charlottetown</city_ascii>
+    <population>42402</population>
+    <region>Prince Edward Island</region>
+    <lat>46.2493</lat>
+    <lng>-63.1313</lng>
+    <capital>provincial</capital>
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124369757</id>
+    <city>Inukjuak</city>
+    <city_ascii>Inukjuak</city_ascii>
+    <population>1597</population>
+    <region>Québec</region>
+    <lat>58.47</lat>
+    <lng>-78.136</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124509835</id>
+    <city>Sarnia</city>
+    <city_ascii>Sarnia</city_ascii>
+    <population>144172</population>
+    <region>Ontario</region>
+    <lat>42.9666</lat>
+    <lng>-82.4</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124274233</id>
+    <city>Edmundston</city>
+    <city_ascii>Edmundston</city_ascii>
+    <population>17894</population>
+    <region>New Brunswick</region>
+    <lat>47.3794</lat>
+    <lng>-68.3333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124841554</id>
+    <city>Joliette</city>
+    <city_ascii>Joliette</city_ascii>
+    <population>45361</population>
+    <region>Québec</region>
+    <lat>46.0333</lat>
+    <lng>-73.4333</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124895094</id>
+    <city>Amherst</city>
+    <city_ascii>Amherst</city_ascii>
+    <population>9336</population>
+    <region>Nova Scotia</region>
+    <lat>45.8166</lat>
+    <lng>-64.2166</lng>
+    <capital />
+  </CanadaCity>
+  <CanadaCity>
+    <id>1124406431</id>
+    <city>Sept-Îles</city>
+    <city_ascii>Sept-Iles</city_ascii>
+    <population>25686</population>
+    <region>Québec</region>
+    <lat>50.3161</lat>
+    <lng>-66.36</lng>
+    <capital />
+  </CanadaCity>
+</CanadaCities>

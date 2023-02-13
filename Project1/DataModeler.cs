@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using CsQuery.ExtensionMethods;
+using Newtonsoft.Json;
+using System.Text;
 using System.Xml.Serialization;
 
 namespace Project1
@@ -10,6 +12,7 @@ namespace Project1
         const string JSON = "json";
         const string XML = "xml";
         const string CSV = "csv";
+        const string DIR_EXT = "../../../data/";
 
         protected Dictionary_T ValueList = new();
 
@@ -99,7 +102,7 @@ namespace Project1
                     throw new ArgumentOutOfRangeException(nameof(type));
             }
 
-            GetParse!.Invoke($"../../../data/{fileName}");
+            GetParse!.Invoke($"{DIR_EXT}{fileName}");
 
             return ValueList;
         }
@@ -110,6 +113,36 @@ namespace Project1
             {
                 throw new FileNotFoundException($"File named {fileName} not found.", fileName);
             }   
+        }
+
+        public void Deserialize(string fileName, string type)
+        {//Change before submission to update existing directory
+            StreamWriter sw = new StreamWriter($"{fileName}.{type}");
+            sw.AutoFlush = true;
+            List<CityInfo> cityList = new();
+            ValueList.ForEach(kvp => kvp.Value.ForEach(city => cityList.Add(city)));
+            switch (type.ToLower())
+            {
+                case JSON:
+                    JsonSerializerSettings settings = new JsonSerializerSettings();
+                    settings.Formatting = Formatting.Indented;
+                    JsonSerializer jsonSerializer = JsonSerializer.Create(settings);
+                    jsonSerializer.Serialize(sw, cityList);
+                    break;
+                case XML:
+                    XmlSerializer xmlSerializer = new(typeof(AllCities));
+                    xmlSerializer.Serialize(sw, new AllCities(cityList));
+                    break;
+                case CSV:
+                    StringBuilder serializedCsv = new("city,city_ascii,lat,lng,country,region,capital,population,id\n");
+                    cityList.ForEach(city => serializedCsv.Append(
+                        $"{city.CityName},{city.CityAscii},{city.Lat},{city.Lng},Canada,{city.Province},{city.CityID}\n"));
+                    sw.Write(serializedCsv.ToString());
+                    break;
+                default:
+                    break;
+            }
+            
         }
     }
 }

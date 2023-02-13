@@ -17,17 +17,13 @@ namespace Project1
         {
             DataModeler dm = new DataModeler();
             CityCatelogue = dm.ParseFile(fileName, fileType);
-            Console.WriteLine("Display by Pop");
-            RankProvinceByPopulation().ForEach(entry=>Console.WriteLine($"{entry.Key, -30}{entry.Value}"));
-            Console.WriteLine("\nDisplay by Cities");
-            RankProvincesByCities().ForEach(entry => Console.WriteLine($"{entry.Key,-30}{entry.Value}"));
-            Console.WriteLine(GetCapital("Ontario"));
+            dm.Deserialize(fileName, fileType);
         }
 
         //City Methods
         public List<CityInfo>? DisplayCityInformation(string cityName)
         {
-            if(!CityCatelogue.ContainsKey(cityName))
+            if (!CityCatelogue.ContainsKey(cityName))
                 throw new ArgumentOutOfRangeException(nameof(cityName), $"{cityName} is not a city from the collection.");
             return CityCatelogue[cityName];
         }
@@ -51,9 +47,9 @@ namespace Project1
         {
             CityInfo? city = GetCity(cityName, prov);
 
-            if(city == null)
+            if (city == null)
                 throw new ArgumentOutOfRangeException(nameof(city), $"Province doesn't have a city named {cityName}");
-                
+
             Process.Start(new ProcessStartInfo(($"https://www.latlong.net/c/?lat={city.Lat}&long={city.Lng}")) { UseShellExecute = true });
         }
 
@@ -69,7 +65,7 @@ namespace Project1
 
                 string responseBody = response.Content.ReadAsStringAsync().Result;
                 JToken? token = JObject.Parse(responseBody).SelectToken(".rows[0].elements[0].distance.value");
-                if(token != null)
+                if (token != null)
                     distance = token.Value<int?>();
             }
             catch (Exception ex)
@@ -80,7 +76,10 @@ namespace Project1
             return distance;
         }
 
-        //public double CalculateDistanceToCapital(CityInfo city
+        public int? CalculateDistanceToCapital(CityInfo city)
+        {
+            return CalculateDistanceBetweenCities(city, GetCapital(city.Province)!);
+        }
 
         //Province Methods
         public int DisplayProvincePopulation(string province)
@@ -124,6 +123,11 @@ namespace Project1
         public CityInfo? GetCapital(string province)
         {
             return DisplayProvinceCities(province).Find(city => city.Capital == "provincial");
+        }
+
+        public void OnCityPopulationChange(CityPopulationChangeEvent changeData,string fileName, string fileType)
+        {
+
         }
         
         //Private helper methods
