@@ -17,6 +17,7 @@ namespace Project1
         {
             DataModeler dm = new DataModeler();
             CityCatelogue = dm.ParseFile(fileName, fileType);
+            dm.Deserialize(fileName, fileType);
         }
 
         //City Methods

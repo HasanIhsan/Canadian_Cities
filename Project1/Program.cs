@@ -6,7 +6,7 @@ namespace Project1
     {
         static void Main(string[] args)
         {
-            Statistics stats = new("Canadacities", "csv");
+            Statistics stats = new("Canadacities", "json");
         }
     }
 }
