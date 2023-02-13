@@ -3,6 +3,7 @@ C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\bin\Debug\net6
 C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\bin\Debug\net6.0\Project1.runtimeconfig.json
 C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\bin\Debug\net6.0\Project1.dll
 C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\bin\Debug\net6.0\Project1.pdb
+C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\bin\Debug\net6.0\CsQuery.dll
 C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\obj\Debug\net6.0\Project1.csproj.AssemblyReference.cache
 C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\obj\Debug\net6.0\Project1.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,4 +16,3 @@ C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\obj\Debug\net6
 C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\obj\Debug\net6.0\Project1.pdb
 C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\obj\Debug\net6.0\Project1.genruntimeconfig.cache
 C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\obj\Debug\net6.0\ref\Project1.dll
-C:\Users\gavin\Documents\School\Projects\Canadian_Cities\Project1\bin\Debug\net6.0\CsQuery.dll

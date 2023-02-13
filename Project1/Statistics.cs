@@ -17,7 +17,6 @@ namespace Project1
         {
             DataModeler dm = new DataModeler();
             CityCatelogue = dm.ParseFile(fileName, fileType);
-            dm.Deserialize(fileName, fileType);
         }
 
         //City Methods
@@ -125,9 +124,11 @@ namespace Project1
             return DisplayProvinceCities(province).Find(city => city.Capital == "provincial");
         }
 
-        public void OnCityPopulationChange(CityPopulationChangeEvent changeData,string fileName, string fileType)
+        public static void OnCityPopulationChange(CityPopulationChangeEvent changeData, string fileName, string fileType)
         {
-
+            DataModeler model = new DataModeler();
+            model.Deserialize(fileName, fileType);
+            //Alert client with changeData
         }
         
         //Private helper methods
