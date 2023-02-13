@@ -137,13 +137,7 @@ namespace Project1
         {
             SortedSet<CityInfo> ss = new SortedSet<CityInfo>(sorter);
 
-            foreach(KeyValuePair<string, List<CityInfo>> city in list)
-            { 
-                foreach(CityInfo cityInfo in city.Value) 
-                {
-                    ss.Add(cityInfo);
-                }
-            }
+            CityCatelogue.ForEach(kvp => kvp.Value.ForEach(city => ss.Add(city)));
 
             return ss;
         }
