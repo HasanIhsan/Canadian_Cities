@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using System.Net;
+using System.Dynamic;
 
 namespace Project1
 {
@@ -16,6 +17,11 @@ namespace Project1
         {
             DataModeler dm = new DataModeler();
             CityCatelogue = dm.ParseFile(fileName, fileType);
+            Console.WriteLine("Display by Pop");
+            RankProvinceByPopulation().ForEach(entry=>Console.WriteLine($"{entry.Key, -30}{entry.Value}"));
+            Console.WriteLine("\nDisplay by Cities");
+            RankProvincesByCities().ForEach(entry => Console.WriteLine($"{entry.Key,-30}{entry.Value}"));
+            Console.WriteLine(GetCapital("Ontario"));
         }
 
         //City Methods
@@ -79,49 +85,45 @@ namespace Project1
         //Province Methods
         public int DisplayProvincePopulation(string province)
         {
-            int i = 0;
-
-            CityCatelogue.ForEach(
-                (kvp) => kvp.Value.ForEach(
-                    (city) => i += city.Province == province
-                    ? city.Population
-                    : 0));
-
-            return i;
+            return DisplayProvinceCities(province).Sum(city => city.Population);
         }
 
-        public Dictionary_T DisplayProvinceCities(string province)
+        public List<CityInfo> DisplayProvinceCities(string province)
         {
-            return CityCatelogue.Where(
-                    (kvp) => kvp.Value.Find(
-                        (city) => city.Province == province) != null
-                        ).ToDictionary((x) => x.Key, (y) => y.Value);
+            return CityCatelogue.SelectMany(kvp => kvp.Value.Where(city => city.Province == province)).ToList();
         }
 
         public Dictionary<string, int> RankProvinceByPopulation()
         {
-            IEnumerable<string> provinces = from kvp in CityCatelogue from city in kvp.Value select city.Province;
-            List<string> s = provinces.Distinct().ToList();
+            List<string> provinceList = GetProvinceList();
             Dictionary_T provAndPop = new Dictionary_T();
-            foreach (string province in s)
+            foreach (string prov in provinceList)
             {
                 int id = 0;
-                provAndPop.Add(province, new List<CityInfo>());
-                provAndPop[province].Add(new CityInfo(id++, province, province, DisplayProvincePopulation(province), province, 0.0, 0.0));
+                provAndPop.Add(prov, new List<CityInfo>());
+                provAndPop[prov].Add(new CityInfo(id++, prov, prov, DisplayProvincePopulation(prov), prov, 0.0, 0.0, ""));
             }
 
             return SortCities(new OrderByPopulation(), provAndPop).ToDictionary(x => x.CityName, y => y.Population);
         }
 
-        public List<CityInfo> RankProvincesByCities()
+        public Dictionary<string, int> RankProvincesByCities()
         {
+            List<string> provinceList = GetProvinceList();
+            Dictionary_T provAndPop = new Dictionary_T();
+            foreach(string prov in provinceList)
+            {
+                int id = 0;
+                provAndPop.Add(prov, new());
+                provAndPop[prov].Add(new CityInfo(id++, prov, prov, DisplayProvinceCities(prov).Count(), prov, 0.0, 0.0, ""));
+            }
 
-            return CityCatelogue.First().Value;
+            return SortCities(new OrderByPopulation(), provAndPop).ToDictionary(city => city.Province, city => city.Population);
         }
 
-        public CityInfo GetCapital(string province)
+        public CityInfo? GetCapital(string province)
         {
-            return CityCatelogue.First().Value[0];
+            return DisplayProvinceCities(province).Find(city => city.Capital == "provincial");
         }
         
         //Private helper methods
@@ -148,6 +150,12 @@ namespace Project1
             CityInfo? city = CityCatelogue[cityName].Find(c => c.Province == province);
             
             return city;
+        }
+
+        private List<string> GetProvinceList()
+        {
+            IEnumerable<string> provinceQuery = from kvp in CityCatelogue from city in kvp.Value select city.Province;
+            return provinceQuery.Distinct().ToList();
         }
     }
 }

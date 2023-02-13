@@ -70,7 +70,8 @@ namespace Project1
                 {
                     city = new CityInfo (int.Parse(cityData[8]),
                     cityData[0], cityData[1], int.Parse(cityData[7]),
-                    cityData[5], double.Parse(cityData[2]), double.Parse(cityData[3]));
+                    cityData[5], double.Parse(cityData[2]),
+                    double.Parse(cityData[3]), cityData[6]);
 
                     if (!ValueList.ContainsKey(city.CityName))
                         ValueList.Add(city.CityName, new());

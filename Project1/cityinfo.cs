@@ -62,10 +62,14 @@ namespace Project1
         [XmlElement(ElementName = "lng")]
         public double Lng { get; set; } = 0.0;
 
+        [JsonProperty("capital")]
+        [XmlElement(ElementName = "capital")]
+        public string Capital { get; set; }
+
         public CityInfo() { }
 
         public CityInfo(int cityid, string cityname, string cityacii,
-            int population, string province, double lat, double lng) {
+            int population, string province, double lat, double lng, string capital) {
             
             CityID = cityid;
             CityName = cityname;
@@ -74,6 +78,7 @@ namespace Project1
             Province = province;
             Lat = lat;
             Lng = lng;
+            Capital = capital;
         }
 
         public string? GetProvince()
