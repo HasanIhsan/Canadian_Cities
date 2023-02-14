@@ -110,17 +110,16 @@ namespace Project1
         private void CheckFile(string fileName)
         {
             if (!File.Exists(fileName))
-            {
                 throw new FileNotFoundException($"File named {fileName} not found.", fileName);
-            }   
+            ValueList.Clear();
         }
 
-        public void Deserialize(string fileName, string type)
+        public void Deserialize(string fileName, string type, Dictionary_T data)
         {//Change before submission to update existing directory
             StreamWriter sw = new StreamWriter($"{fileName}.{type}");
             sw.AutoFlush = true;
             List<CityInfo> cityList = new();
-            ValueList.ForEach(kvp => kvp.Value.ForEach(city => cityList.Add(city)));
+            data.ForEach(kvp => kvp.Value.ForEach(city => cityList.Add(city)));
             switch (type.ToLower())
             {
                 case JSON:
@@ -136,12 +135,13 @@ namespace Project1
                 case CSV:
                     StringBuilder serializedCsv = new("city,city_ascii,lat,lng,country,region,capital,population,id\n");
                     cityList.ForEach(city => serializedCsv.Append(
-                        $"{city.CityName},{city.CityAscii},{city.Lat},{city.Lng},Canada,{city.Province},{city.CityID}\n"));
+                        $"{city.CityName},{city.CityAscii},{city.Lat},{city.Lng},Canada,{city.Province},{city.Capital},{city.Population},{city.CityID}\r\n"));
                     sw.Write(serializedCsv.ToString());
                     break;
                 default:
                     break;
             }
+            sw.Close();
         }
     }
 }

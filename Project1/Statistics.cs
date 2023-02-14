@@ -13,11 +13,12 @@ namespace Project1
     {
         public Dictionary_T CityCatelogue { get; init; }
 
+        const string DIR_EXT = "../../../data/";
+
         public Statistics(string fileName, string fileType)
         {
             DataModeler dm = new DataModeler();
             CityCatelogue = dm.ParseFile(fileName, fileType);
-            dm.Deserialize(fileName, fileType);
         }
 
         //City Methods
@@ -125,10 +126,12 @@ namespace Project1
             return DisplayProvinceCities(province).Find(city => city.Capital == "provincial");
         }
 
-        public static void OnCityPopulationChange(CityPopulationChangeEvent changeData, string fileName, string fileType)
+        public static void OnCityPopulationChange(CityPopulationChangeEvent changeData, Dictionary_T catelogue, string fileName, string fileType)
         {
             DataModeler model = new DataModeler();
-            model.Deserialize(fileName, fileType);
+            GUI.GUI.printError($"City population for {changeData.CurrentCity.CityName}, {changeData.CurrentCity.Province} has changed from {changeData.CurrentCity.Population} to {changeData.NewPop}");
+            catelogue[changeData.CurrentCity.CityName].Find(city => city.Province == changeData.CurrentCity.Province)!.Population = changeData.NewPop;
+            model.Deserialize($"{DIR_EXT}{fileName}", fileType, catelogue);
             //Alert client with changeData
         }
         
@@ -142,7 +145,7 @@ namespace Project1
             return ss;
         }
 
-        private CityInfo? GetCity(string cityName, string province)
+        public CityInfo? GetCity(string cityName, string province)
         {
             if (!CityCatelogue.ContainsKey(cityName))
                 throw new ArgumentOutOfRangeException(cityName, $"City {cityName} not found in catelogue.");

@@ -8,12 +8,12 @@ namespace Project1
 {
     public class CityPopulationChangeEvent : EventArgs
     {
-        public int CurrentPop { get; set; }
+        public CityInfo CurrentCity { get; set; }
         public int NewPop { get; set; }
 
-        public CityPopulationChangeEvent(int currentPop, int newPop)
+        public CityPopulationChangeEvent(ref CityInfo currentCity, int newPop)
         {
-            CurrentPop = currentPop;
+            CurrentCity = currentCity;
             NewPop = newPop;
         }
     }
